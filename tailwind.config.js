@@ -7,7 +7,16 @@ module.exports = {
         hero: "url('../images/hero.jpg')",
       }),
       colors: {
-        "chalk-dark-gray": "#bada55",
+        "chalk-dark-gray": "#333333",
+        "chalk-orange": `#F89C1A`,
+        "chalk-light-gray": `#B3BFCD`,
+        "chalk-blue": `#205478`,
+        "chalk-gray": "#E3E3E3",
+      },
+      fontFamily: {
+        body: [`Raleway, Helvetica, sans-serif`],
+        heading: [`Russo one, Roboto, sans-serif`],
+        number: [`Roboto, sans-serif`],
       },
     },
   },

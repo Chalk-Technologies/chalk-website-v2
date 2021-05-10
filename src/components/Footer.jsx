@@ -19,11 +19,13 @@ const Footer = () => {
   return (
     <footer className="flex bg-chalk-dark-gray px-6 py-3">
       <div className="flex-grow w-1/3">
-        <small>Copyright © 2021. Chalk technologies. all rights reserved</small>
+        <small className="text-white">
+          Copyright © 2021. Chalk technologies. all rights reserved
+        </small>
       </div>
-      <div className="flex-grow flex justify-center w-1/3">
+      <div className="flex-grow flex justify-center w-1/3 text-white ">
         {data.socialMedia.map((item) => (
-          <a href={item.href} className="mx-4">
+          <a href={item.href} className="mx-4" target="_blank">
             {item.icon}
           </a>
         ))}
