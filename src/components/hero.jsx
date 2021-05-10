@@ -21,7 +21,7 @@ const data = {
 const Hero = () => {
   return (
     <>
-      <Container className="h-screen bg-hero bg-cover">
+      <Container className="h-screen bg-hero bg-cover pt-36">
         <div className="container mx-auto flex justify-between items-center  h-1/2">
           <div className="flex justify-center w-1/3">
             <ul>

@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         hero: "url('../images/hero.jpg')",
       }),
+      colors: {
+        "chalk-dark-gray": "#bada55",
+      },
     },
   },
   variants: {
