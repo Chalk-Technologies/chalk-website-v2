@@ -20,37 +20,38 @@ const data = {
 
 const Hero = () => {
   return (
-    <>
-      <Container className="bg-hero bg-cover pt-36">
-        <div className="container mx-auto flex flex-wrap justify-between items-center flex-grow-0">
-          <div className="flex justify-center">
-            <ul>
-              {data.buttons.map((button) => (
-                <li className="border-2 border-white flex items-center justify-center my-2 hover:bg-gray-900 hover:scale-110 transition">
-                  <a
-                    className="text-white py-3 px-5 uppercase"
-                    href={button.href}
-                  >
-                    {button.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col justify-end flex-grow md:ml-12 order-first lg:order-last">
-            <h1 className="text-white font-heading text-6xl uppercase text-right w-100">
-              Make your <br /> sessions count
-            </h1>
-            <div className="h-1 bg-chalk-orange w-100 my-8" />
-            <div className="flex justify-end">
-              <button className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase">
-                Get in touch
-              </button>
-            </div>
+    <Container className="bg-hero bg-center bg-cover pt-36 ">
+      <div className="container mx-auto flex flex-wrap justify-between items-center flex-grow md:flex-grow-0 pb-40">
+        <div className="flex justify-center flex-grow">
+          <ul>
+            {data.buttons.map((button, idx) => (
+              <li
+                key={idx}
+                className="border-2 border-white flex items-center justify-center my-2 hover:bg-gray-900 hover:scale-110 transition"
+              >
+                <a
+                  className="text-white py-3 px-5 uppercase"
+                  href={button.href}
+                >
+                  {button.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex flex-col justify-end flex-grow md:ml-12 order-first lg:order-last ">
+          <h1 className="text-white font-heading text-3xl md:text-6xl uppercase text-right w-100 pr-8 md:pr-0">
+            Make your <br /> sessions count
+          </h1>
+          <div className="h-1 bg-chalk-orange w-100 my-8" />
+          <div className="flex justify-end px-8 md:px-0">
+            <button className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 ">
+              Get in touch
+            </button>
           </div>
         </div>
-      </Container>
-    </>
+      </div>
+    </Container>
   );
 };
 

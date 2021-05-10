@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         hero: "url('../images/hero.jpg')",
+        gyms: "url('../images/gyms.jpg')",
+        climbers: "url('../images/climbers.jpg')",
       }),
       colors: {
         "chalk-dark-gray": "#333333",
