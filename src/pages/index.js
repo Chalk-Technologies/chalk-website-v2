@@ -8,10 +8,6 @@ import Layout from "../components/layout";
 const IndexPage = () => {
   const [menu, setMenu] = useState(null);
 
-  useEffect(() => {
-    console.log({ menu });
-  }, [menu]);
-
   return (
     <Layout>
       <Hero />
