@@ -65,22 +65,24 @@ const BetaPage = () => {
             <Row
               isLast={idx === data.rows.length - 1}
               key={title}
-              className="grid grid-cols-3"
+              className="grid grid-cols-1 lg:grid-cols-3"
             >
               <div
                 className={idx % 2 === 0 ? "order-last" : "order-first"}
               ></div>
               <div
-                className={`${idx % 2 === 0 ? "order-first" : "order-last"}`}
+                className={`${
+                  idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
+                }`}
               >
                 <Frame className="mx-auto" src={picture} alt={alt} />
               </div>
-              <div className="px-8">
+              <div className="p-8 lg:py-0 px-8">
                 <h1 className="text-4xl text-chalk-orange font-heading uppercase">
                   {title}
                 </h1>
                 {text.map((paragraph) => (
-                  <p key={paragraph} className="py-4 font-body text-xl">
+                  <p key={paragraph} className="py-4 font-body text-2xl">
                     {paragraph}
                   </p>
                 ))}
@@ -100,7 +102,13 @@ const Image = styled.div`
 `;
 
 const Row = styled.div`
-  margin-bottom: ${(props) => (props.isLast ? "0" : "-30vh")};
+  @media screen and (min-width: 1024px) {
+    margin-bottom: ${(props) => (props.isLast ? "0" : "-20vh")};
+  }
+
+  @media screen and (min-width: 1586px) {
+    margin-bottom: ${(props) => (props.isLast ? "0" : "-30vh")};
+  }
 `;
 
 const Frame = styled.img`

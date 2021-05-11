@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Chalk v2",
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
