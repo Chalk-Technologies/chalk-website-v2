@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Layout from "../components/layout";
+import FramesGrid from "../components/FramesGrid";
 import Gym from "../images/frames/Gym.png";
 import Profile from "../images/frames/Profile.png";
 import QRScanner from "../images/frames/QRScanner.png";
@@ -49,6 +50,7 @@ const BetaPage = () => {
       },
     ],
   };
+
   return (
     <Layout>
       <h1 className="pt-36 pb-12 text-5xl text-white uppercase font-heading pl-8">
@@ -59,38 +61,7 @@ const BetaPage = () => {
         <Image className="bg-climbers bg-cover py-96 bg-center" />
         <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
       </div>
-      <div className="bg-chalk-gray">
-        <div className="container mx-auto py-36">
-          {data.rows.map(({ title, text, picture, alt }, idx) => (
-            <Row
-              isLast={idx === data.rows.length - 1}
-              key={title}
-              className="grid grid-cols-1 lg:grid-cols-3"
-            >
-              <div
-                className={idx % 2 === 0 ? "order-last" : "order-first"}
-              ></div>
-              <div
-                className={`${
-                  idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
-                }`}
-              >
-                <Frame className="mx-auto" src={picture} alt={alt} />
-              </div>
-              <div className="p-8 lg:py-0 px-8">
-                <h1 className="text-4xl text-chalk-orange font-heading uppercase">
-                  {title}
-                </h1>
-                {text.map((paragraph) => (
-                  <p key={paragraph} className="py-4 font-body text-2xl">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </Row>
-          ))}
-        </div>
-      </div>
+      <FramesGrid data={data} />
     </Layout>
   );
 };
@@ -99,20 +70,4 @@ export default BetaPage;
 
 const Image = styled.div`
   clip-path: polygon(0 0%, 100% 50%, 100% 100%, 0 100%);
-`;
-
-const Row = styled.div`
-  @media screen and (min-width: 1024px) {
-    margin-bottom: ${(props) => (props.isLast ? "0" : "-20vh")};
-  }
-
-  @media screen and (min-width: 1586px) {
-    margin-bottom: ${(props) => (props.isLast ? "0" : "-30vh")};
-  }
-`;
-
-const Frame = styled.img`
-  position: relative;
-  top: -3vh;
-  height: 80vh;
 `;

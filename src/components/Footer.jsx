@@ -24,8 +24,8 @@ const Footer = () => {
         </small>
       </div>
       <div className="flex-grow flex justify-center order-first md:order-1 w-full text-white md:w-1/3 pb-3 md:py-0">
-        {data.socialMedia.map((item) => (
-          <a href={item.href} className="mx-4" target="_blank">
+        {data.socialMedia.map((item, idx) => (
+          <a href={item.href} key={idx} className="mx-4" target="_blank">
             {item.icon}
           </a>
         ))}

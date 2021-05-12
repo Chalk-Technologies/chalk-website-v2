@@ -20,7 +20,7 @@ const data = {
 
 const Hero = () => {
   return (
-    <Container className="bg-hero bg-center bg-cover pt-36 ">
+    <Container className="bg-hero bg-center bg-cover bg-no-repeat pt-36">
       <div className="container mx-auto flex flex-wrap justify-between items-center flex-grow md:flex-grow-0 pb-40">
         <div className="flex justify-center flex-grow">
           <ul>
