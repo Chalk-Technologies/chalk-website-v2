@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import FadeInSection from "../components/FadeInSection";
+
 const FramesGrid = ({ data }) => {
   return (
     <section className="bg-chalk-gray">
@@ -12,13 +14,14 @@ const FramesGrid = ({ data }) => {
             className="grid grid-cols-1 lg:grid-cols-3"
           >
             <div className={idx % 2 === 0 ? "order-last" : "order-first"}></div>
-            <div
-              className={`${
+            <FadeInSection
+              fromRight={idx % 2 !== 0}
+              classToApply={`${
                 idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
               }`}
             >
               <Frame className="mx-auto" src={picture} alt={alt} />
-            </div>
+            </FadeInSection>
             <div className="p-8 lg:py-0 px-8">
               <h1 className="text-4xl text-chalk-orange font-heading uppercase">
                 {title}

@@ -53,14 +53,16 @@ const BetaPage = () => {
 
   return (
     <Layout>
-      <h1 className="pt-36 pb-12 text-5xl text-white uppercase font-heading pl-8">
-        Powers <br />
-        climbers
-      </h1>
-      <div className="relative">
-        <Image className="bg-climbers bg-cover py-96 bg-center" />
-        <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
-      </div>
+      <section className="min-h-screen pt-36">
+        <h1 className="pb-12 text-5xl text-white uppercase font-heading pl-8">
+          Powers <br />
+          climbers
+        </h1>
+        <div className="relative">
+          <Image className="bg-climbers bg-cover py-96 bg-center" />
+          <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
+        </div>
+      </section>
       <FramesGrid data={data} />
     </Layout>
   );
