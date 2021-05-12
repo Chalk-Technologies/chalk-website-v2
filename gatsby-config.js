@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/chalk-website-v2",
   siteMetadata: {
     title: "Chalk v2",
     siteUrl: `https://www.example.com`,
