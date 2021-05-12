@@ -27,10 +27,10 @@ const Hero = () => {
             {data.buttons.map((button, idx) => (
               <li
                 key={idx}
-                className="border-2 border-white flex items-center justify-center my-2 hover:bg-gray-900 hover:scale-110 transition"
+                className="border-2 border-white flex items-center justify-center my-2 hover:bg-chalk-dark-gray hover:scale-110 transition"
               >
                 <a
-                  className="text-white py-3 px-5 uppercase"
+                  className="text-white py-3 px-5 uppercase font-heading"
                   href={button.href}
                 >
                   {button.name}
@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
           <div className="h-1 bg-chalk-orange w-100 my-8" />
           <div className="flex justify-end px-8 md:px-0">
-            <button className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 ">
+            <button className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white transition hover:scale-105">
               Get in touch
             </button>
           </div>

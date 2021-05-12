@@ -21,5 +21,5 @@ const Banner = () => {
 export default Banner;
 
 const Word = tw.span`
-mx-4 text-chalk-light-gray text-3xl uppercase
+mx-4 text-chalk-light-gray text-3xl md:text-4xl lg:text-4xl uppercase font-heading
 `;
