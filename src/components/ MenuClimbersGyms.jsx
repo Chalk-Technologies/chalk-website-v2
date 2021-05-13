@@ -10,7 +10,7 @@ const MenuClimbersGyms = ({ setMenu }) => {
         onMouseLeave={() => setMenu(null)}
         className="hover:text-chalk-orange"
       >
-        <Link to="/beta" className="flex-grow">
+        <Link to="/beta" className="flex-grow text-left">
           Powers
           <br /> climbers
         </Link>
@@ -20,11 +20,11 @@ const MenuClimbersGyms = ({ setMenu }) => {
         onMouseLeave={() => setMenu(null)}
         className="hover:text-chalk-orange"
       >
-        <Link to="/gamma" className="flex-grow">
-          Powers <br />
+        <Link to="/gamma" className="flex-grow text-right">
+          Powers
+          <br />
           gyms
         </Link>
-        t
       </Button>
     </div>
   );

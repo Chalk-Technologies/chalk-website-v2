@@ -11,7 +11,7 @@ const data = {
     {
       alt: "linkedin",
       icon: <FaLinkedinIn className="h-8 w-8" />,
-      href: "",
+      href: "https://www.linkedin.com/company/chalk-technologies",
     },
   ],
 };
