@@ -7,6 +7,8 @@ module.exports = {
         hero: "url('../images/hero.jpg')",
         gyms: "url('../images/gyms.jpg')",
         climbers: "url('../images/climbers.jpg')",
+        modal: "url('../images/modal.jpg')",
+        aboutus: "url('../images/about-us.jpg')",
       }),
       colors: {
         "chalk-dark-gray": "#333333",

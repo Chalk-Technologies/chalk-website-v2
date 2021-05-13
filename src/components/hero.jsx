@@ -1,25 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-const data = {
-  buttons: [
-    {
-      name: "Download for Android",
-      href: "/",
-    },
-    {
-      name: "Download for iOS",
-      href: "/",
-    },
-    {
-      name: "Sign up for the newsletter",
-      href: "/",
-      variant: true,
-    },
-  ],
-};
+const Hero = ({ setShowModal }) => {
+  const data = {
+    buttons: [
+      {
+        name: "Download for Android",
+        onClick: () => setShowModal(true),
+      },
+      {
+        name: "Download for iOS",
+        onClick: () => setShowModal(true),
+      },
+    ],
+  };
 
-const Hero = () => {
   return (
     <Container className="bg-hero bg-center bg-cover bg-no-repeat pt-36">
       <div className="container mx-auto flex flex-wrap justify-between items-stretch flex-grow md:flex-grow-0 pb-40">
@@ -34,16 +29,16 @@ const Hero = () => {
                     : "hover:bg-chalk-dark-gray hover:border-chalk-dark-gray"
                 } hover:scale-110 transition`}
               >
-                <a
+                <button
                   className={`${
                     button.variant
                       ? "text-chalk-dark-gray hover:text-white"
                       : "text-white"
                   } py-3 px-5 uppercase font-heading`}
-                  href={button.href}
+                  onClick={button.onClick}
                 >
                   {button.name}
-                </a>
+                </button>
               </li>
             ))}
           </List>

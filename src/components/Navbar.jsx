@@ -23,6 +23,10 @@ const Navbar = () => {
         text: "Gamma for gyms",
         to: "/gamma",
       },
+      {
+        text: "About us",
+        to: "/about-us",
+      },
     ],
   };
 
