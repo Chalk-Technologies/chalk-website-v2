@@ -52,7 +52,7 @@ const Gamma = () => {
       <section className="min-h-screen pt-36">
         <h1 className="pt-36 pb-12 text-5xl text-white uppercase font-heading pl-8">
           Powers <br />
-          climbers
+          Gyms
         </h1>
         <div className="relative">
           <Image className="bg-gyms bg-cover py-96 bg-center" />
