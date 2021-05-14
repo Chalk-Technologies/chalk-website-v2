@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        hero: "url('../images/hero.jpg')",
-        gyms: "url('../images/gyms.jpg')",
-        climbers: "url('../images/climbers.jpg')",
-        modal: "url('../images/modal.jpg')",
-        aboutus: "url('../images/about-us.jpg')",
+        hero: "url('../images/hero_img.jpg')",
+        gyms: "url('../images/gyms_img.jpg')",
+        climbers: "url('../images/climbers_img.jpg')",
+        modal: "url('../images/modal_img.jpg')",
+        aboutus: "url('../images/about-us_img.jpg')",
       }),
       colors: {
         "chalk-dark-gray": "#333333",

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Hero = ({ setShowModal }) => {
   const data = {
@@ -49,9 +50,12 @@ const Hero = ({ setShowModal }) => {
           </h1>
           <div className="h-1 bg-chalk-orange w-100 my-2" />
           <div className="flex justify-end px-7 md:px-0">
-            <button className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white transition hover:scale-105">
+            <Link
+              to="/contact"
+              className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white transition hover:scale-105"
+            >
               Get in touch
-            </button>
+            </Link>
           </div>
         </div>
       </div>

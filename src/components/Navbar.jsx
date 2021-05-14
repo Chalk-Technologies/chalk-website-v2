@@ -27,11 +27,15 @@ const Navbar = () => {
         text: "About us",
         to: "/about-us",
       },
+      {
+        text: "Contact us",
+        to: "/contact",
+      },
     ],
   };
 
   return (
-    <nav className="fixed top-0 w-screen z-20">
+    <nav className="fixed top-0 w-screen z-20 pt-2">
       <div className="container mt-4 lg:mt-0 mx-auto flex justify-between items-center relative">
         <div
           onMouseEnter={() => setShowMenu(true)}
