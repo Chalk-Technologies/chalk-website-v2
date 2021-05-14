@@ -18,8 +18,8 @@ const Hero = ({ setShowModal }) => {
   return (
     <Container className="bg-hero bg-center bg-cover bg-no-repeat pt-36">
       <div className="container mx-auto flex flex-wrap justify-between items-stretch flex-grow md:flex-grow-0 pb-40">
-        <div className="flex flex-col flex-nowrap pl-8 items-start justify-between flex-grow">
-          <List className="flex-grow flex flex-col flex-nowrap justify-between">
+        <div className="flex flex-col flex-nowrap px-8 lg:pr-0 items-stretch lg:items-start justify-between flex-grow">
+          <List className="flex-grow flex flex-col flex-nowrap justify-start items-stretch flex-grow">
             {data.buttons.map((button, idx) => (
               <li
                 key={idx}
@@ -34,7 +34,7 @@ const Hero = ({ setShowModal }) => {
                     button.variant
                       ? "text-chalk-dark-gray hover:text-white"
                       : "text-white"
-                  } py-3 px-5 uppercase font-heading`}
+                  } py-3 px-5 uppercase font-heading flex-grow-1`}
                   onClick={button.onClick}
                 >
                   {button.name}

@@ -31,11 +31,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-screen z-50">
+    <nav className="fixed top-0 w-screen z-20">
       <div className="container mt-4 lg:mt-0 mx-auto flex justify-between items-center relative">
         <div
           onMouseEnter={() => setShowMenu(true)}
           onMouseLeave={() => setShowMenu(false)}
+          onClick={() => setShowMenu(!showMenu)}
         >
           <div>
             <img src={MenuButton} className="h-14 lg:h-20" />
