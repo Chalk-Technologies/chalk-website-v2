@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import FramesGrid from "../components/FramesGrid";
 import Gym from "../images/frames/Gym.png";
 import Profile from "../images/frames/Profile.png";

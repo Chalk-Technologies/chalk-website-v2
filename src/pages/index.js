@@ -4,7 +4,7 @@ import MenuClimbersGyms from "../components/ MenuClimbersGyms";
 import Banner from "../components/Banner";
 import ClimbersGymsPictures from "../components/ClimbersGymsPictures";
 import Hero from "../components/hero";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Modal from "../components/Modal";
 
 const IndexPage = () => {
