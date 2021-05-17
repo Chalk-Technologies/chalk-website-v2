@@ -12,16 +12,16 @@ const Contact = () => {
   const onSubmit = (data) => {
     setStatus("loading");
 
-    const { email, first, last, phone } = data;
+    const { recipient, title, text } = data;
 
     let body = JSON.stringify({
-      email,
-      first,
-      phone,
-      last,
+      recipient,
+      title,
+      text,
+      secret: "XmTpO1",
     });
 
-    fetch("/", {
+    fetch("/system/mail", {
       method: "POST",
       body,
     })
@@ -72,7 +72,7 @@ const Contact = () => {
                   className="flex items-start px-4 py-2 my-3 flex-start font-heading text-chalk-dark-gray"
                 />
                 <textarea
-                  {...register("message")}
+                  {...register("text")}
                   type="text"
                   required
                   placeholder="Message"
@@ -80,24 +80,12 @@ const Contact = () => {
                   rows={10}
                 />
                 <input
-                  {...register("email")}
+                  {...register("recipient")}
                   type="email"
                   required
                   placeholder="your@email.com"
                   className="px-4 py-2 my-3 font-heading text-chalk-dark-gray"
                 />
-                <div className="flex flex-wrap flex-grow">
-                  <input
-                    {...register("first")}
-                    placeholder="First name"
-                    className="flex-grow px-4 py-2 mb-3 font-heading text-chalk-gray lg:mb-0 lg:mr-2"
-                  />
-                  <input
-                    {...register("last")}
-                    placeholder="Last name"
-                    className="flex-grow px-4 py-2 font-heading text-chalk-gray lg:ml-2"
-                  />
-                </div>
                 <button className="w-1/2 px-8 py-4 mx-auto my-4 mt-6 text-white uppercase transition border-2 border-white font-heading hover:text-chalk-dark-gray hover:bg-chalk-orange hover:border-chalk-orange">
                   Send
                 </button>
