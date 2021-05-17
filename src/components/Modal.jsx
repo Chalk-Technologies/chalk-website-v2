@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "gatsby";
 
 const Modal = ({ setShowModal }) => {
@@ -11,30 +12,47 @@ const Modal = ({ setShowModal }) => {
   };
   const overlay = useRef();
 
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
+  const { register, handleSubmit } = useForm();
+
+  const handleSubmitForm = (data) => {
+    console.log(data);
     setStatus("loading");
 
-    try {
-      //SEND EMAIL
-      setStatus("success");
-    } catch {
-      setStatus("error");
-    }
+    const { email, first, last } = data;
+
+    let body = JSON.stringify({
+      email,
+      first,
+      last,
+    });
+
+    fetch("https://server.chalk-technologies.com/system/email_subscribe", {
+      method: "POST",
+      body,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+      })
+      .then(() => setStatus("success"))
+      .catch(() => {
+        setStatus("error");
+      });
   };
 
   return (
     <div
-      className="h-full w-screen absolute top-0 left-0 flex justify-center items-center z-30 bg-white bg-opacity-70 blur px-4"
+      className="absolute top-0 left-0 z-30 flex items-center justify-center w-screen h-full px-4 bg-white bg-opacity-70 blur"
       onClick={handleClick}
       ref={overlay}
     >
-      <div className="rounded bg-chalk-dark-gray container mx-auto text-white flex flex-col lg:flex-row">
-        <div className="flex-grow bg-modal bg-cover bg-norepeat rounded-l h-24 lg:h-auto" />
-        <div className="px-4 lg:px-8 py-8 lg:py-16 relative">
+      <div className="container flex flex-col mx-auto text-white rounded bg-chalk-dark-gray lg:flex-row">
+        <div className="flex-grow h-24 bg-cover rounded-l bg-modal bg-norepeat lg:h-auto" />
+        <div className="relative px-4 py-8 lg:px-8 lg:py-16">
           {status !== "initial" && (
-            <div className="w-full h-full flex justify-center items-center absolute top-0 left-0 z-40 bg-chalk-dark-gray flex-col">
-              <h1 className="text-white font-heading text-2xl">
+            <div className="absolute top-0 left-0 z-40 flex flex-col items-center justify-center w-full h-full bg-chalk-dark-gray">
+              <h1 className="text-2xl text-white font-heading">
                 {status === "loading" && "Loading"}
                 {status === "success" &&
                   "✅ All good! You will be the first one to know about the release date."}
@@ -43,7 +61,7 @@ const Modal = ({ setShowModal }) => {
               </h1>
               {status === "success" && (
                 <button
-                  className="py-4 px-8 my-4 text-white uppercase font-heading border-2 border-white hover:bg-white hover:text-chalk-dark-gray"
+                  className="px-8 py-4 my-4 text-white uppercase border-2 border-white font-heading hover:bg-white hover:text-chalk-dark-gray"
                   onClick={() => setShowModal(false)}
                 >
                   Close
@@ -52,26 +70,26 @@ const Modal = ({ setShowModal }) => {
               {status === "error" && (
                 <Link
                   to="/contact"
-                  className="py-4 px-8 my-4 text-white uppercase font-heading border-2 border-white"
+                  className="px-8 py-4 my-4 text-white uppercase border-2 border-white font-heading"
                 >
                   Send us an email
                 </Link>
               )}
             </div>
           )}
-          <h1 className="text-2xl lg:text-5xl font-heading pb-4">
+          <h1 className="pb-4 text-2xl lg:text-5xl font-heading">
             We're almost there! 🎉
           </h1>
-          <div className="h-1 bg-chalk-orange  mb-12 flex-grow-0" />
-          <p className="font-body text-xl lg:text-2xl pb-4">
+          <div className="flex-grow-0 h-1 mb-12 bg-chalk-orange" />
+          <p className="pb-4 text-xl font-body lg:text-2xl">
             The whole team is working very hard to bring you out the best
             climbing experience.
           </p>
 
-          <p className="font-body text-xl lg:text-2xl pb-4">
+          <p className="pb-4 text-xl font-body lg:text-2xl">
             Meanwhile, you can already use Beta from your browser
             <a
-              className="font-bold ml-1 text-chalk-orange cursor-pointer hover:underline"
+              className="ml-1 font-bold cursor-pointer text-chalk-orange hover:underline"
               href="https://beta.chalk-technologies.com"
               target="_blank"
             >
@@ -79,33 +97,53 @@ const Modal = ({ setShowModal }) => {
             </a>
           </p>
           <div className="py-4" />
-          <p className="font-body text-xl lg:text-2xl pb-4">
+          <p className="pb-4 text-xl font-body lg:text-2xl">
             Want us to drop you a line when the mobile application is released ?
           </p>
-          <p className="font-body text-xl lg:text-2xl pb-4">
+          <p className="pb-4 text-xl font-body lg:text-2xl">
             Simply leave us your email!
           </p>
           <form
-            onSubmit={handleSubmitForm}
-            className="flex flex-wrap lg:flex-nowrap justify-center items-stretch mt-0 lg:mt-8"
+            onSubmit={handleSubmit(handleSubmitForm)}
+            className="flex flex-col mt-0 ms-stretch lg:flex-nowrap lg:mt-8"
           >
-            <input
-              type="email"
-              required
-              className="p-2 flex-grow flex items-center justify-between text-chalk-dark-gray font-heading rounded text-xl"
-            />
-            <button
-              className="ml-2 flex-grow-0 px-8 py-4 rounded border-2 border-white font-heading text-xl hover:border-chalk-orange hover:bg-chalk-orange hover:text-chalk-dark-gray mt-4 lg:mt-0"
-              type="submit"
-            >
-              Yes, please!
-            </button>
-            <button
-              className="mt-4 lg:mt-0 hover:color-red-500 text-md block lg:hidden"
-              onClick={() => setShowModal(false)}
-            >
-              No, thank you.
-            </button>
+            <div className="flex flex-wrap mb-2 lg:mb-3">
+              <input
+                {...register("first")}
+                required
+                placeholder="First name"
+                className="flex items-center justify-between flex-grow p-2 mb-2 text-xl rounded lg:p-4 lg:mb-0 lg:mr-2 text-chalk-dark-gray font-heading"
+              />
+              <input
+                {...register("last")}
+                required
+                placeholder="Last name"
+                className="flex items-center justify-between flex-grow p-2 text-xl rounded lg:ml-2 text-chalk-dark-gray font-heading"
+              />
+            </div>
+            <div className="flex flex-wrap">
+              <input
+                {...register("email")}
+                type="email"
+                required
+                placeholder="me@email.com"
+                className="flex items-center justify-between flex-grow p-2 text-xl rounded text-chalk-dark-gray font-heading"
+              />
+              <div className="flex flex-col mx-auto">
+                <button
+                  className="flex-grow-0 px-8 py-4 mt-4 ml-2 text-xl border-2 border-white rounded font-heading hover:border-chalk-orange hover:bg-chalk-orange hover:text-chalk-dark-gray lg:mt-0"
+                  type="submit"
+                >
+                  Yes, please!
+                </button>
+                <button
+                  className="block mt-4 lg:mt-0 hover:color-red-500 text-md lg:hidden"
+                  onClick={() => setShowModal(false)}
+                >
+                  No, thank you.
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
