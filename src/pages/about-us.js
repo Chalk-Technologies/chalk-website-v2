@@ -46,12 +46,12 @@ const Gamma = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pt-36 pb-12 text-5xl text-white uppercase font-heading pl-8">
+        <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
           Meet the team
         </h1>
         <div className="relative">
-          <Image className="bg-aboutus bg-cover py-96 bg-center" />
-          <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
+          <Image className="bg-center bg-cover bg-aboutus py-96" />
+          <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
         </div>
       </section>
       <section className="bg-chalk-gray">
@@ -60,7 +60,7 @@ const Gamma = () => {
             <Row
               isLast={idx === data.rows.length - 1}
               key={title}
-              className="grid grid-cols-1 lg:grid-cols-2 mb-16"
+              className="grid grid-cols-1 mb-16 lg:grid-cols-2"
             >
               <FadeInSection
                 fromRight={idx % 2 !== 0}
@@ -69,17 +69,17 @@ const Gamma = () => {
                 }`}
               >
                 <Frame
-                  className="object-cover m-auto rounded-lg shadow-lg "
+                  className="object-cover m-auto "
                   src={picture}
                   alt={alt}
                 />
               </FadeInSection>
-              <div className="p-8 lg:py-0 px-8 flex items-center flex-col justify-center">
-                <h1 className="text-4xl text-chalk-orange font-heading uppercase">
+              <div className="flex flex-col items-center justify-center p-8 px-8 lg:py-0">
+                <h1 className="text-4xl uppercase text-chalk-orange font-heading">
                   {title}
                 </h1>
                 {text.map((paragraph) => (
-                  <p key={paragraph} className="py-4 font-body text-2xl">
+                  <p key={paragraph} className="py-4 text-2xl font-body">
                     {paragraph}
                   </p>
                 ))}

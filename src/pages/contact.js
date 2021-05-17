@@ -55,7 +55,7 @@ const Contact = () => {
         <section className="absolute top-0 left-0 z-30 flex justify-center w-screen min-h-screen px-2 mt-20 align-center pt-60 lg:py-60">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="container flex flex-col items-stretch justify-around p-8 px-4 mx-24 mx-auto border-2 rounded-lg shadow-lg lg:px-16 bg-chalk-dark-gray border-chalk-orange"
+            className="container flex flex-col items-stretch justify-around p-8 px-4 mx-24 mx-auto border-2 lg:px-16 bg-chalk-dark-gray border-chalk-orange"
           >
             {status === "initial" && (
               <h1 className="flex items-center justify-center my-3 text-4xl text-white uppercase font-heading">

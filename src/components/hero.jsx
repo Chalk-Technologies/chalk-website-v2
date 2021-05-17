@@ -17,10 +17,10 @@ const Hero = ({ setShowModal }) => {
   };
 
   return (
-    <Container className="bg-hero bg-center bg-cover bg-no-repeat pt-36">
-      <div className="container mx-auto flex flex-wrap justify-between items-stretch flex-grow md:flex-grow-0 pb-40">
-        <div className="flex flex-col flex-nowrap px-8 lg:pr-0 items-stretch lg:items-start justify-between flex-grow">
-          <List className="flex-grow flex flex-col flex-nowrap justify-start items-stretch flex-grow">
+    <Container className="bg-center bg-no-repeat bg-cover bg-hero pt-36">
+      <div className="container flex flex-wrap items-stretch justify-between flex-grow pb-40 mx-auto md:flex-grow-0">
+        <div className="flex flex-col items-stretch justify-between flex-grow px-8 flex-nowrap lg:pr-0 lg:items-start">
+          <List className="flex flex-col items-stretch justify-start flex-grow flex-nowrap">
             {data.buttons.map((button, idx) => (
               <li
                 key={idx}
@@ -44,15 +44,15 @@ const Hero = ({ setShowModal }) => {
             ))}
           </List>
         </div>
-        <div className="flex flex-col justify-between flex-grow md:ml-12 order-first lg:order-last ">
-          <h1 className="text-white font-heading text-3xl md:text-5xl uppercase text-right w-100 pr-8 md:pr-0">
+        <div className="flex flex-col justify-between flex-grow order-first md:ml-12 lg:order-last ">
+          <h1 className="pr-8 text-3xl text-right text-white uppercase font-heading md:text-5xl w-100 md:pr-0">
             Make your <br /> sessions count
           </h1>
-          <div className="h-1 bg-chalk-orange w-100 my-2" />
+          <div className="h-1 my-2 bg-chalk-orange w-100" />
           <div className="flex justify-end px-7 md:px-0">
             <Link
               to="/contact"
-              className="py-3 px-8 bg-white flex items-center justify-center text-black w-1/2 uppercase font-heading mb-8 md:mb-0 flex-grow md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white transition hover:scale-105"
+              className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black uppercase transition bg-white rounded font-heading md:mb-0 md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white hover:scale-105"
             >
               Get in touch
             </Link>
