@@ -52,7 +52,7 @@ const Hero = ({ setShowModal }) => {
           <div className="flex justify-end px-7 md:px-0">
             <Link
               to="/contact"
-              className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black uppercase transition bg-white rounded font-heading md:mb-0 md:flex-grow-0 hover:bg-chalk-dark-gray hover:text-white hover:scale-105"
+              className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black uppercase transition bg-white rounded font-heading md:mb-0 md:flex-grow-0 hover:bg-chalk-orange hover:scale-105"
             >
               Get in touch
             </Link>
