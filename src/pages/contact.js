@@ -19,7 +19,7 @@ const Contact = () => {
       recipient,
       title,
       text,
-      secret: "XmTpO1",
+      secret: "eE9n2p",
     });
 
     fetch(`${API_ENDPOINT}/system/mail`, {
@@ -96,8 +96,8 @@ const Contact = () => {
               <div className="flex flex-col items-center justify-center flex-grow">
                 <h2 className="flex items-center justify-center text-2xl text-white font-body font-heading">
                   <span role="img" alt="check mark icon">
-                    ✅
-                  </span>{" "}
+                    ✅{" "}
+                  </span>
                   All good! We'll get back to you as soon as we're finished
                   climbing.
                 </h2>
