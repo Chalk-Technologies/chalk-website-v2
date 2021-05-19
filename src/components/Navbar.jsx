@@ -35,8 +35,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-screen z-20 pt-2">
-      <div className="container mt-4 lg:mt-0 mx-auto flex justify-between items-center relative">
+    <nav className="fixed top-0 z-20 w-screen pt-2">
+      <div className="container relative flex items-center justify-between mx-auto mt-4 lg:mt-0">
         <div
           onMouseEnter={() => setShowMenu(true)}
           onMouseLeave={() => setShowMenu(false)}
@@ -56,7 +56,7 @@ const Navbar = () => {
                 transition={{ bounce: 0, duration: 0.3 }}
               >
                 {data.menuItems.map(({ text, to }, idx) => (
-                  <Item>
+                  <Item key={idx}>
                     <Link to={to}>{text}</Link>
                   </Item>
                 ))}
@@ -65,12 +65,12 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
         <Link
-          className="text-white flex color-white absolute right-0 top-0"
+          className="absolute top-0 right-0 flex text-white color-white"
           to="/"
         >
           <img
             src={Logo}
-            className="h-14 lg:h-20 fill-current color-white pb-2"
+            className="pb-2 fill-current h-14 lg:h-20 color-white"
           />
         </Link>
       </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
+import { API_ENDPOINT } from "../utils/config";
 
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
@@ -21,7 +22,7 @@ const Contact = () => {
       secret: "XmTpO1",
     });
 
-    fetch("/system/mail", {
+    fetch(`${API_ENDPOINT}/system/mail`, {
       method: "POST",
       body,
     })

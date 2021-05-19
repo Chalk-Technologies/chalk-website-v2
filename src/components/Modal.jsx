@@ -15,7 +15,6 @@ const Modal = ({ setShowModal }) => {
   const { register, handleSubmit } = useForm();
 
   const handleSubmitForm = (data) => {
-    console.log(data);
     setStatus("loading");
 
     const { email, first, last } = data;
@@ -26,7 +25,7 @@ const Modal = ({ setShowModal }) => {
       last,
     });
 
-    fetch("https://server.chalk-technologies.com/system/email_subscribe", {
+    fetch(`${API_ENDPOINT}/system/email_subscribe`, {
       method: "POST",
       body,
     })
@@ -47,8 +46,8 @@ const Modal = ({ setShowModal }) => {
       onClick={handleClick}
       ref={overlay}
     >
-      <div className="container flex flex-col mx-auto text-white rounded bg-chalk-dark-gray lg:flex-row">
-        <div className="flex-grow h-24 bg-cover rounded-l bg-modal bg-norepeat lg:h-auto" />
+      <div className="container flex flex-col mx-auto text-white bg-chalk-dark-gray lg:flex-row">
+        <div className="flex-grow h-24 bg-cover bg-modal bg-norepeat lg:h-auto" />
         <div className="relative px-4 py-8 lg:px-8 lg:py-16">
           {status !== "initial" && (
             <div className="absolute top-0 left-0 z-40 flex flex-col items-center justify-center w-full h-full bg-chalk-dark-gray">
@@ -112,13 +111,13 @@ const Modal = ({ setShowModal }) => {
                 {...register("first")}
                 required
                 placeholder="First name"
-                className="flex items-center justify-between flex-grow p-2 mb-2 text-xl rounded lg:p-4 lg:mb-0 lg:mr-2 text-chalk-dark-gray font-heading"
+                className="flex items-center justify-between flex-grow p-2 mb-2 text-xl lg:p-4 lg:mb-0 lg:mr-2 text-chalk-dark-gray font-heading"
               />
               <input
                 {...register("last")}
                 required
                 placeholder="Last name"
-                className="flex items-center justify-between flex-grow p-2 text-xl rounded lg:ml-2 text-chalk-dark-gray font-heading"
+                className="flex items-center justify-between flex-grow p-2 text-xl lg:ml-2 text-chalk-dark-gray font-heading"
               />
             </div>
             <div className="flex flex-wrap">
@@ -127,11 +126,11 @@ const Modal = ({ setShowModal }) => {
                 type="email"
                 required
                 placeholder="me@email.com"
-                className="flex items-center justify-between flex-grow p-2 text-xl rounded text-chalk-dark-gray font-heading"
+                className="flex items-center justify-between flex-grow p-2 text-xl text-chalk-dark-gray font-heading"
               />
               <div className="flex flex-col mx-auto">
                 <button
-                  className="flex-grow-0 px-8 py-4 mt-4 ml-2 text-xl border-2 border-white rounded font-heading hover:border-chalk-orange hover:bg-chalk-orange hover:text-chalk-dark-gray lg:mt-0"
+                  className="flex-grow-0 px-8 py-4 mt-4 ml-2 text-xl border-2 border-white font-heading hover:border-chalk-orange hover:bg-chalk-orange hover:text-chalk-dark-gray lg:mt-0"
                   type="submit"
                 >
                   Yes, please!
