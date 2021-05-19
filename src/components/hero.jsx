@@ -70,7 +70,7 @@ const Container = styled.div`
   padding-bottom: 10%;
 `;
 
-const List = styled.li`
+const List = styled.ul`
   li:not(:first-child) {
     margin-top: 0.5rem;
   }
