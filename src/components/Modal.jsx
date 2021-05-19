@@ -2,17 +2,24 @@ import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "gatsby";
 
+import { API_ENDPOINT } from "../utils/config";
+
 const Modal = ({ setShowModal }) => {
   const [status, setStatus] = useState("initial");
+  const overlay = useRef();
+  const { register, handleSubmit } = useForm();
 
   const handleClick = (e) => {
     if (e.target === overlay.current) {
       setShowModal(false);
     }
   };
-  const overlay = useRef();
 
-  const { register, handleSubmit } = useForm();
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 27) {
+      setShowModal(false);
+    }
+  };
 
   const handleSubmitForm = (data) => {
     setStatus("loading");
@@ -44,7 +51,9 @@ const Modal = ({ setShowModal }) => {
     <div
       className="absolute top-0 left-0 z-30 flex items-center justify-center w-screen h-full px-4 bg-white bg-opacity-70 blur"
       onClick={handleClick}
+      onKeyDown={handleKeyDown}
       ref={overlay}
+      role="presentation"
     >
       <div className="container flex flex-col mx-auto text-white bg-chalk-dark-gray lg:flex-row">
         <div className="flex-grow h-24 bg-cover bg-modal bg-norepeat lg:h-auto" />
@@ -55,8 +64,14 @@ const Modal = ({ setShowModal }) => {
                 {status === "loading" && "Loading"}
                 {status === "success" &&
                   "✅ All good! You will be the first one to know about the release date."}
-                {status === "error" &&
-                  "😕 Something went wrong. Feel free to send us an email"}
+                {status === "error" && (
+                  <>
+                    <span role="img" aria-label="unhappy face">
+                      😕
+                    </span>
+                    "Something went wrong. Feel free to send us an email"}
+                  </>
+                )}
               </h1>
               {status === "success" && (
                 <button
@@ -77,7 +92,10 @@ const Modal = ({ setShowModal }) => {
             </div>
           )}
           <h1 className="pb-4 text-2xl lg:text-5xl font-heading">
-            We're almost there! 🎉
+            We're almost there!{" "}
+            <span role="img" aria-label="congratulations emoticon">
+              🎉
+            </span>
           </h1>
           <div className="flex-grow-0 h-1 mb-12 bg-chalk-orange" />
           <p className="pb-4 text-xl font-body lg:text-2xl">
@@ -91,8 +109,12 @@ const Modal = ({ setShowModal }) => {
               className="ml-1 font-bold cursor-pointer text-chalk-orange hover:underline"
               href="https://beta.chalk-technologies.com"
               target="_blank"
+              rel="noreferrer"
             >
-              👉 here
+              <span role="img" aria-label="pointing right emoticon">
+                👉
+              </span>{" "}
+              here
             </a>
           </p>
           <div className="py-4" />

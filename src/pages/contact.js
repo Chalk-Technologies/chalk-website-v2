@@ -95,7 +95,10 @@ const Contact = () => {
             {status === "success" && (
               <div className="flex flex-col items-center justify-center flex-grow">
                 <h2 className="flex items-center justify-center text-2xl text-white font-body font-heading">
-                  ✅ All good! We'll get back to you as soon as we're finished
+                  <span role="img" alt="check mark icon">
+                    ✅
+                  </span>{" "}
+                  All good! We'll get back to you as soon as we're finished
                   climbing.
                 </h2>
                 <Link
@@ -109,7 +112,10 @@ const Contact = () => {
             {status === "error" && (
               <div className="flex flex-col items-center justify-center flex-grow">
                 <h2 className="flex items-center justify-center text-2xl text-white font-body font-heading">
-                  😕 Something went wrong...
+                  <span role="img" aria-label="sad face emoji">
+                    😕
+                  </span>{" "}
+                  Something went wrong...
                 </h2>
                 <h2 className="flex items-center justify-center mt-2 text-2xl text-white font-body font-heading">
                   Alternatively you can send us a good ol' fashioned email by
@@ -118,8 +124,12 @@ const Contact = () => {
                     className="ml-2 font-bold text-chalk-orange"
                     href="mailto:info@chalk-technologies.com"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    👉 here
+                    <span role="img" aria-label="point right emoji">
+                      👉
+                    </span>{" "}
+                    here
                   </a>
                   .
                 </h2>

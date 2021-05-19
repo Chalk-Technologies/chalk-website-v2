@@ -1,17 +1,17 @@
 import React from "react";
-import tw, { styled } from "twin.macro";
+import tw from "twin.macro";
 import Logo from "../images/icons/logo_icon_light_gray.svg";
 
 const Banner = () => {
   return (
-    <div className="flex justify-center items-center py-12">
+    <div className="flex items-center justify-center py-12">
       <Word>Send</Word>
       <div className="w-12">
-        <img src={Logo} />
+        <img src={Logo} alt="Beta's logo" />
       </div>
       <Word>Climb</Word>
       <div className="w-12">
-        <img src={Logo} />
+        <img src={Logo} alt="Beta's logo" />
       </div>
       <Word>Train</Word>
     </div>

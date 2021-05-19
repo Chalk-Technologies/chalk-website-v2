@@ -37,13 +37,13 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 z-20 w-screen pt-2">
       <div className="container relative flex items-center justify-between mx-auto mt-4 lg:mt-0">
-        <div
+        <button
           onMouseEnter={() => setShowMenu(true)}
           onMouseLeave={() => setShowMenu(false)}
           onClick={() => setShowMenu(!showMenu)}
         >
           <div>
-            <img src={MenuButton} className="h-14 lg:h-20" />
+            <img src={MenuButton} className="h-14 lg:h-20" alt="menu button" />
           </div>
 
           <AnimatePresence>
@@ -63,7 +63,7 @@ const Navbar = () => {
               </motion.div>
             )}
           </AnimatePresence>
-        </div>
+        </button>
         <Link
           className="absolute top-0 right-0 flex text-white color-white"
           to="/"
@@ -71,6 +71,7 @@ const Navbar = () => {
           <img
             src={Logo}
             className="pb-2 fill-current h-14 lg:h-20 color-white"
+            alt="beta's logo"
           />
         </Link>
       </div>

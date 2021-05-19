@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const FadeInSection = ({ children, classToApply, fromRight }) => {
@@ -6,11 +6,12 @@ const FadeInSection = ({ children, classToApply, fromRight }) => {
   const domRef = React.useRef();
 
   React.useEffect(() => {
+    let element = domRef.current;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    observer.observe(element);
+    return () => observer.unobserve(element);
   }, []);
 
   return (
