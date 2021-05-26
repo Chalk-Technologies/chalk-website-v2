@@ -14,19 +14,20 @@ const BetaPage = () => {
   const data = {
     rows: [
       {
-        title: "Find your next send & project",
+        title: "Find & send new projects",
         text: [
-          "BETA lets you search and explorer the gyms near you, or in the city you are visiting when the approaches or weather got you down.",
-          "Explorer the top rated routes in the gyms, find the routes that git your styled, and the grades that you can send.",
+          "BETA lets you search and explore the gyms near you, or in the city you are visiting when you're on the road.",
+          "Explore the top rated routes in the gyms, find the routes that fit your style, save and share the routes you attempt.",
         ],
         alt: "Screenshot of the gym page of Beta",
         picture: Gym,
       },
       {
-        title: "The ultimate gym tool",
+        title: "Navigate the gym",
         text: [
-          "Climbing shoes, a Chalk bag and the BETA App - the must haves for climbing at the gym...",
-          "We have developed new technology TAPTOSEND which allows you to easily move through the gym, scan the next route that catches your eye and start climbing. Track the time you have been climbing for and tick it as sent!",
+          "Climbing shoes, a Chalk bag and the BETA App will be your new must haves for climbing in a gym.",
+          "With our new technology TAP-TO-SEND you can easily move through the gym, scan the routes that catch your eye and start climbing.",
+          "Beta lets your track each attempt, and save routes as you send them,.",
         ],
         alt: "Screenshot of the route scanner page of Beta",
         picture: QRScanner,
@@ -34,16 +35,16 @@ const BetaPage = () => {
       {
         title: "Track your progress",
         text: [
-          "We have brought the climbing guidebook to the 21st century. You can now see the routes you have sen, tracking your progress over time.",
-          "We are also secretly working in the background to add even more features for you to track your progress, a true digital coach.",
+          "We're transforming the climbing guidebook. You can now see the routes you have sent or attempted as well as track your progress over time.",
+          "We are also working in the background on features that will you tips on how to progress and climb harder",
         ],
         alt: "Screenshot of the athlete metrics page of Beta",
         picture: Profile,
       },
       {
-        title: "Make your voice heard",
+        title: "Be heard",
         text: [
-          "BETA gives you a voice allowing you to let route setters and gyms know which routes were the bomb or which were not.",
+          "BETA gives you a voice allowing you to let route-setters and gyms know what you think of each route, as well as the gym as a whole.",
         ],
         alt: "Screenshot of the route reviews page of Beta",
         picture: Route,
@@ -54,13 +55,13 @@ const BetaPage = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pb-12 text-5xl text-white uppercase font-heading pl-8">
+        <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
           Powers <br />
           climbers
         </h1>
         <div className="relative">
-          <Image className="bg-climbers bg-cover py-96 bg-center" />
-          <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
+          <Image className="bg-center bg-cover bg-climbers py-96" />
+          <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
         </div>
       </section>
       <FramesGrid data={data} />

@@ -13,35 +13,29 @@ const Gamma = () => {
   const data = {
     rows: [
       {
-        title: "Taptosend",
+        title: "Enhance the experience",
         text: [
-          "BETA lets you search and explore the gyms near you, or in the city you are visiting when the approaches or weather got you down.",
-          "Explore the top rated routes in the gyms, find the routes that git your style, and the grades that you can send.",
+          "Easily and efficiently log the routes you have active, while giving your customers access to digital route pages.",
+          "Engage with climbers by collecting feedback on routes and democratizing the grading system",
         ],
-        alt: "Screenshot of the gym profile page",
+        alt: "Screenshot of the QRScanner TAPTOSEND",
         picture: Gym,
       },
       {
-        title: "The event manager",
+        title: "Manage classes & events",
         text: [
-          "Climbing shoes, a Chalk bag adn the BETA App - the must haves for climbing at the gym...",
-          "We have developed new technology TAPTOSEND which allows you to easily move through the gym, scan the next route that catches your eye and start climbing. Track the time you have been climbing for, and tick it as sent!",
-        ],
-        alt: "Screenshot of the QRScanner TAPTOSEND",
-        picture: QRScanner,
-      },
-      {
-        title: "The route manager",
-        text: [
-          "We have brought the climbing guidebook to the 21st century. You can now see the routes your have sent, tracking your progress over time.",
-          "We are also secretly working in the background to add even more features for you to track your progress, a true digital coach.",
+          "Create an online event calendar accessible to all BETA users and gym members",
+          "Manage customer loads and peak hours and gain access to business intelligence data.",
         ],
         alt: "Screenshot of the profile metrics",
         picture: Profile,
       },
       {
-        title: "Customer / Profile manager",
-        text: ["Leave personal notes on the climber profile page."],
+        title: "Know your customer",
+        text: [
+          "We use AI technology on the aggregated data from all users to help businesses understand their customers better.",
+          "Routesetters will have more honest feedback from users, managers will be able to see which opening hours might overstaffed, and the app makes class scheduling and memberships a breeze",
+        ],
         alt: "Screenshot of the reviews",
         picture: Route,
       },
@@ -50,13 +44,13 @@ const Gamma = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pt-36 pb-12 text-5xl text-white uppercase font-heading pl-8">
+        <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
           Powers <br />
           Gyms
         </h1>
         <div className="relative">
-          <Image className="bg-gyms bg-cover py-96 bg-center" />
-          <div className="bg-chalk-orange w-1 h-full absolute left-0 top-0 ml-24 mt-24 z-10" />
+          <Image className="bg-center bg-cover bg-gyms py-96" />
+          <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
         </div>
       </section>
       <FramesGrid data={data} />
