@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-20 w-screen pt-2">
+    <nav className="fixed top-0 z-50 w-screen pt-2">
       <div className="container relative flex items-center justify-between mx-auto mt-4 lg:mt-0">
         <div>
           <button onClick={() => setShowMenu(!showMenu)}>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <AnimatePresence>
             {showMenu && (
               <motion.div
-                className="flex flex-col pl-8"
+                className="relative z-50 flex flex-col pl-8"
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ height: -10, opacity: 0 }}
