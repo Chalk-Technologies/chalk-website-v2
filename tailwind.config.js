@@ -9,6 +9,7 @@ module.exports = {
         climbers: "url('../images/climbers_img.jpg')",
         modal: "url('../images/modal_img.jpg')",
         aboutus: "url('../images/about-us_img.jpg')",
+        termsandconditions: "url('../images/terms-and-conditions_img.jpg')",
       }),
       colors: {
         "chalk-dark-gray": "#333333",

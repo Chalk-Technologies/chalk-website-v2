@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 
 import Gym from "../images/frames/Gym.png";
 import Profile from "../images/frames/Profile.png";
-import QRScanner from "../images/frames/QRScanner.png";
 import Route from "../images/frames/Route.png";
 
 const Gamma = () => {
