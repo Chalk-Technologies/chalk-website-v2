@@ -31,10 +31,6 @@ const Navbar = () => {
         text: "Contact us",
         to: "/contact",
       },
-      {
-        text: "Terms and Conditions",
-        to: "/terms-and-conditions",
-      },
     ],
   };
 
