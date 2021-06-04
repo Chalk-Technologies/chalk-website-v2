@@ -12,7 +12,7 @@ const Gamma = () => {
   const data = {
     rows: [
       {
-        title: "Miura Hawkins, Co-founder and CTO",
+        title: "Miura Hawkins, Co-founder and CEO",
         text: [
           "Rocking a harness and chalk bag since the age of 6, Miura has seen the indoor climbing gym industry undergo massive changes, growing from a culty fringe activity to an Olympic sport.",
           "She was a member of the USA Climbing National Team for almost a decade and coached youth teams across the United States and Europe.",

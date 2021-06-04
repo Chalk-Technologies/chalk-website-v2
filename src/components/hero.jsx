@@ -3,15 +3,17 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 const Hero = ({ setShowModal }) => {
+
+
   const data = {
     buttons: [
       {
         name: "Download for Android",
-        onClick: () => setShowModal(true),
+        onClick: () => window.open("https://play.google.com/store/apps/details?id=beta.chalk_technologies.com"),
       },
       {
         name: "Download for iOS",
-        onClick: () => setShowModal(true),
+        onClick: () => window.open("https://apps.apple.com/mt/app/beta-climbing/id1568699364"),
       },
     ],
   };
