@@ -6,7 +6,7 @@ const data = {
     {
       alt: "instagram",
       icon: <FaInstagram className="w-8 h-8" />,
-      href: "https://www.instagram.com/chalk.tech/",
+      href: "https://www.instagram.com/chalk.beta/",
     },
     {
       alt: "linkedin",
