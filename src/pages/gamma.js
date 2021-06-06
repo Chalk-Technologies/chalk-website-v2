@@ -38,12 +38,18 @@ const Gamma = () => {
         alt: "Screenshot of the reviews",
         picture: Route,
       },
+      {
+        title: "Join the movement",
+        text: [
+          "We'll help you set up BETA in your gym for free. Contact us today.",
+        ],
+      },
     ],
   };
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
+        <h1 className="pb-12 pl-24 text-5xl text-white uppercase pt-36 font-heading">
           Powers <br />
           Gyms
         </h1>

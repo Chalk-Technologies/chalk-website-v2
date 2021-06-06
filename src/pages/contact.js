@@ -44,7 +44,7 @@ const Contact = () => {
     <Layout>
       <section className="flex flex-col flex-grow pt-36">
         <section className="">
-          <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
+          <h1 className="pb-12 pl-24 text-5xl text-white uppercase font-heading">
             Contact <br />
             Us
           </h1>

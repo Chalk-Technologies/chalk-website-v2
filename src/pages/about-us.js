@@ -46,7 +46,7 @@ const Gamma = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
+        <h1 className="pb-12 pl-24 text-5xl text-white uppercase pt-36 font-heading">
           Meet the team
         </h1>
         <div className="relative">

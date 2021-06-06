@@ -55,7 +55,7 @@ const BetaPage = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
-        <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
+        <h1 className="pb-12 pl-24 text-5xl text-white uppercase font-heading">
           Powers <br />
           climbers
         </h1>

@@ -37,7 +37,7 @@ const Hero = ({ setShowModal }) => {
                     button.variant
                       ? "text-chalk-dark-gray hover:text-white"
                       : "text-white"
-                  } py-3 px-5 uppercase font-heading flex-grow-1`}
+                  } py-3 px-5 font-body flex-grow-1`}
                   onClick={button.onClick}
                 >
                   {button.name}
@@ -48,13 +48,13 @@ const Hero = ({ setShowModal }) => {
         </div>
         <div className="flex flex-col justify-between flex-grow order-first md:ml-12 lg:order-last ">
           <h1 className="pr-8 text-3xl text-right text-white uppercase font-heading md:text-5xl w-100 md:pr-0">
-            Make your <br /> sessions count
+            Make your sessions count
           </h1>
           <div className="h-1 my-2 bg-chalk-orange w-100" />
           <div className="flex justify-end px-7 md:px-0">
             <Link
               to="/contact"
-              className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black uppercase transition bg-white rounded font-heading md:mb-0 md:flex-grow-0 hover:bg-chalk-orange hover:scale-105"
+              className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black transition bg-white rounded body md:mb-0 md:flex-grow-0 hover:bg-chalk-orange hover:scale-105"
             >
               Get in touch
             </Link>

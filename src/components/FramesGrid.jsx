@@ -22,7 +22,7 @@ const FramesGrid = ({ data }) => {
             >
               <Frame className="mx-auto" src={picture} alt={alt} />
             </FadeInSection>
-            <div className="p-8 lg:py-0 px-8">
+            <div className="p-8 lg:py-36 px-8">
               <h1 className="text-4xl text-chalk-orange font-heading uppercase">
                 {title}
               </h1>

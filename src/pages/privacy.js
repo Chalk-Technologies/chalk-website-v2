@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Layout from "../components/Layout";
 
-const TermsAndConditions = () => {
+const Privacy = () => {
   return (
     <Layout>
       <section className="min-h-screen pt-36">
@@ -425,7 +425,7 @@ const TermsAndConditions = () => {
   );
 };
 
-export default TermsAndConditions;
+export default Privacy;
 
 const Image = styled.div`
   clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0 100%);
