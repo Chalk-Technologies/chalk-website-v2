@@ -39,6 +39,12 @@ const Gamma = () => {
         alt: "Screenshot of the reviews",
         picture: Route,
       },
+      {
+        title: "Join the movement",
+        text: [
+          "We'll help you set up BETA in your gym for free. Contact us today.",
+        ],
+      },
     ],
   };
   return (

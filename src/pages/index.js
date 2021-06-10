@@ -14,7 +14,6 @@ const IndexPage = () => {
   return (
     <>
       <Seo title="Change the way you climb. Track, train, send. Manage your climbing gym" />
-      .
       <Layout class="min-h-screen flex flex-col relative">
         {showModal && <Modal setShowModal={setShowModal} />}
         <Hero setShowModal={setShowModal} />
