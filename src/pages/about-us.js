@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Miura from "../images/miura.jpg";
 import Phanos from "../images/phanos.jpg";
 import Alo from "../images/alo.jpg";
+import Seo from "../components/SEO";
 
 const Gamma = () => {
   const data = {
@@ -44,51 +45,54 @@ const Gamma = () => {
     ],
   };
   return (
-    <Layout>
-      <section className="min-h-screen pt-36">
-        <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
-          Meet the team
-        </h1>
-        <div className="relative">
-          <Image className="bg-center bg-cover bg-aboutus py-96" />
-          <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
-        </div>
-      </section>
-      <section className="bg-chalk-gray">
-        <div className="container mx-auto py-36">
-          {data.rows.map(({ title, text, picture, alt }, idx) => (
-            <Row
-              isLast={idx === data.rows.length - 1}
-              key={title}
-              className="grid grid-cols-1 mb-16 lg:grid-cols-2"
-            >
-              <FadeInSection
-                fromRight={idx % 2 !== 0}
-                classToApply={`flex ${
-                  idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
-                }`}
+    <>
+      <Seo title="Meet the team" />
+      <Layout>
+        <section className="min-h-screen pt-36">
+          <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
+            Meet the team
+          </h1>
+          <div className="relative">
+            <Image className="bg-center bg-cover bg-aboutus py-96" />
+            <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
+          </div>
+        </section>
+        <section className="bg-chalk-gray">
+          <div className="container mx-auto py-36">
+            {data.rows.map(({ title, text, picture, alt }, idx) => (
+              <Row
+                isLast={idx === data.rows.length - 1}
+                key={title}
+                className="grid grid-cols-1 mb-16 lg:grid-cols-2"
               >
-                <Frame
-                  className="object-cover m-auto "
-                  src={picture}
-                  alt={alt}
-                />
-              </FadeInSection>
-              <div className="flex flex-col items-center justify-center p-8 px-8 lg:py-0">
-                <h1 className="text-4xl uppercase text-chalk-orange font-heading">
-                  {title}
-                </h1>
-                {text.map((paragraph) => (
-                  <p key={paragraph} className="py-4 text-2xl font-body">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </Row>
-          ))}
-        </div>
-      </section>
-    </Layout>
+                <FadeInSection
+                  fromRight={idx % 2 !== 0}
+                  classToApply={`flex ${
+                    idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
+                  }`}
+                >
+                  <Frame
+                    className="object-cover m-auto "
+                    src={picture}
+                    alt={alt}
+                  />
+                </FadeInSection>
+                <div className="flex flex-col items-center justify-center p-8 px-8 lg:py-0">
+                  <h1 className="text-4xl uppercase text-chalk-orange font-heading">
+                    {title}
+                  </h1>
+                  {text.map((paragraph) => (
+                    <p key={paragraph} className="py-4 text-2xl font-body">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </Row>
+            ))}
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 };
 

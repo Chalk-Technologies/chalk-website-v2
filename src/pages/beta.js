@@ -9,6 +9,7 @@ import Gym from "../images/frames/Gym.png";
 import Profile from "../images/frames/Profile.png";
 import QRScanner from "../images/frames/QRScanner.png";
 import Route from "../images/frames/Route.png";
+import Seo from "../components/SEO";
 
 const BetaPage = () => {
   const data = {
@@ -53,19 +54,22 @@ const BetaPage = () => {
   };
 
   return (
-    <Layout>
-      <section className="min-h-screen pt-36">
-        <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
-          Powers <br />
-          climbers
-        </h1>
-        <div className="relative">
-          <Image className="bg-center bg-cover bg-climbers py-96" />
-          <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
-        </div>
-      </section>
-      <FramesGrid data={data} />
-    </Layout>
+    <>
+      <Seo title="Beta for climbers" />
+      <Layout>
+        <section className="min-h-screen pt-36">
+          <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
+            Powers <br />
+            climbers
+          </h1>
+          <div className="relative">
+            <Image className="bg-center bg-cover bg-climbers py-96" />
+            <div className="absolute top-0 left-0 z-10 w-1 h-full mt-24 ml-24 bg-chalk-orange" />
+          </div>
+        </section>
+        <FramesGrid data={data} />
+      </Layout>
+    </>
   );
 };
 
