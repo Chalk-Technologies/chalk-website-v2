@@ -53,9 +53,15 @@ const BetaPage = () => {
     ],
   };
 
+  const seo = {
+    title: "BETA Climbing app",
+    description:
+      "BETA lets you track and share your climbing session with QR-code route tags, progress analytics, challenged and project setting",
+  };
+
   return (
     <>
-      <Seo title="Beta for climbers" />
+      <Seo title={seo.title} description={seo.description} />
       <Layout>
         <section className="min-h-screen pt-36">
           <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">

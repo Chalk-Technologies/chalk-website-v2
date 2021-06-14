@@ -11,9 +11,15 @@ const IndexPage = () => {
   const [menu, setMenu] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
+  const seo = {
+    title: "BETA makes your sessions count",
+    description:
+      "BETA powers climbers and gyms through technologies that help you train smarter and send harder climbs, while tracking and sharing your progress with friends.",
+  };
+
   return (
     <>
-      <Seo title="Change the way you climb. Track, train, send. Manage your climbing gym" />
+      <Seo title={seo.title} description={seo.description} />
       <Layout class="min-h-screen flex flex-col relative">
         {showModal && <Modal setShowModal={setShowModal} />}
         <Hero setShowModal={setShowModal} />

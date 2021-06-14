@@ -41,6 +41,11 @@ const Contact = () => {
       });
   };
 
+  const seo = {
+    title: "BETA support",
+    description:
+      "Contact the BETA team for any questions related to setting up an account, registering your gym or asking about juicy new features.",
+  };
   return (
     <>
       <Seo title="Contact from - Get in touch" />

@@ -44,9 +44,15 @@ const Gamma = () => {
       },
     ],
   };
+
+  const seo = {
+    title: "Obsessed with progress",
+    description:
+      "The BETA of a climb is the key to unlocking it. We're a passionate and committed team, unified by our mission to help climbers train smarter and send harder climbs.",
+  };
   return (
     <>
-      <Seo title="Meet the team" />
+      <Seo title={seo.title} description={seo.description} />
       <Layout>
         <section className="min-h-screen pt-36">
           <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">

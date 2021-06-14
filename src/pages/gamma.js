@@ -47,9 +47,15 @@ const Gamma = () => {
       },
     ],
   };
+
+  const seo = {
+    title: "GAMMA Climbing Gym Software",
+    description:
+      "GAMMA powers climbing gyms by providing digital route setting, event and class management as well as business analytics, while transforming the experience for their customers.",
+  };
   return (
     <>
-      <Seo title="Gamma for gyms" />
+      <Seo title={seo.title} description={seo.description} />
       <Layout>
         <section className="min-h-screen pt-36">
           <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
