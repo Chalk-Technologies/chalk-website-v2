@@ -20,14 +20,14 @@ const FramesGrid = ({ data }) => {
                 idx % 2 === 0 ? "order-first" : "order-first lg:order-last"
               }`}
             >
-              <Frame className="mx-auto" src={picture} alt={alt} />
+              <Frame className="mx-auto lg:my-36" src={picture} alt={alt} />
             </FadeInSection>
-            <div className="p-8 lg:py-36 px-8">
-              <h1 className="text-4xl text-chalk-orange font-heading uppercase">
+            <div className="p-8 px-8 lg:py-36">
+              <h1 className="text-4xl uppercase text-chalk-orange font-heading">
                 {title}
               </h1>
               {text.map((paragraph) => (
-                <p key={paragraph} className="py-4 font-body text-2xl">
+                <p key={paragraph} className="py-4 text-2xl font-body">
                   {paragraph}
                 </p>
               ))}

@@ -1,19 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { t, Trans } from "@lingui/macro";
 
 const Hero = ({ setShowModal }) => {
-
-
   const data = {
     buttons: [
       {
-        name: "Download for Android",
-        onClick: () => window.open("https://play.google.com/store/apps/details?id=beta.chalk_technologies.com"),
+        name: t`Download for Android`,
+        onClick: () =>
+          window.open(
+            "https://play.google.com/store/apps/details?id=beta.chalk_technologies.com"
+          ),
       },
       {
-        name: "Download for iOS",
-        onClick: () => window.open("https://apps.apple.com/mt/app/beta-climbing/id1568699364"),
+        name: t`Download for iOS`,
+        onClick: () =>
+          window.open(
+            "https://apps.apple.com/mt/app/beta-climbing/id1568699364"
+          ),
       },
     ],
   };
@@ -48,7 +53,7 @@ const Hero = ({ setShowModal }) => {
         </div>
         <div className="flex flex-col justify-between flex-grow order-first md:ml-12 lg:order-last ">
           <h1 className="pr-8 text-3xl text-right text-white uppercase font-heading md:text-5xl w-100 md:pr-0">
-            Make your sessions count
+            <Trans>Make your sessions count</Trans>
           </h1>
           <div className="h-1 my-2 bg-chalk-orange w-100" />
           <div className="flex justify-end px-7 md:px-0">
@@ -56,7 +61,7 @@ const Hero = ({ setShowModal }) => {
               to="/contact"
               className="flex items-center justify-center flex-grow w-1/2 px-8 py-3 mb-8 text-black transition bg-white rounded body md:mb-0 md:flex-grow-0 hover:bg-chalk-orange hover:scale-105"
             >
-              Get in touch
+              <Trans>Get in touch</Trans>
             </Link>
           </div>
         </div>

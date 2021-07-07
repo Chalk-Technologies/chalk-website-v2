@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const ClimbersGymsPictures = ({ selectedMenu, setMenu }) => {
   return (
-    <div className="h-96 w-screen overflow-y-hidden">
+    <div className="w-screen overflow-y-hidden h-96">
       <Link to="/gamma">
         <CutoutLeft
           onMouseEnter={() => setMenu("climbers")}
@@ -15,7 +15,7 @@ const ClimbersGymsPictures = ({ selectedMenu, setMenu }) => {
         >
           <FirstPicture
             selected={selectedMenu === "climbers"}
-            className="h-96 w-screen bg-climbers bg-cover bg-center transition origin-bottom-left"
+            className="w-screen transition origin-bottom-left bg-center bg-cover h-96 bg-climbers"
           />
         </CutoutLeft>
       </Link>
@@ -26,7 +26,7 @@ const ClimbersGymsPictures = ({ selectedMenu, setMenu }) => {
             onMouseEnter={() => setMenu("gyms")}
             onMouseLeave={() => setMenu(null)}
             selected={selectedMenu === "gyms"}
-            className="h-96 w-screen bg-gyms bg-cover bg-right transition origin-bottom-right"
+            className="w-screen transition origin-bottom-right bg-right bg-cover h-96 bg-gyms"
           />
         </CutoutRight>
       </Link>

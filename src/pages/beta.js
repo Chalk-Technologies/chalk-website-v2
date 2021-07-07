@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { Trans, t } from "@lingui/macro";
 
 import Layout from "../components/Layout";
 import FramesGrid from "../components/FramesGrid";
@@ -15,48 +16,47 @@ const BetaPage = () => {
   const data = {
     rows: [
       {
-        title: "Find & send new projects",
+        title: t`Find & send new projects`,
         text: [
-          "BETA lets you search and explore the gyms near you, or in the city you are visiting when you're on the road.",
-          "Explore the top rated routes in the gyms, find the routes that fit your style, save and share the routes you attempt.",
+          t`BETA lets you search and explore the gyms near you, or in the city you are visiting when you're on the road.`,
+          t`Explore the top rated routes in the gyms, find the routes that fit your style, save and share the routes you attempt.`,
         ],
-        alt: "Screenshot of the gym page of Beta",
+        alt: t`Screenshot of the gym page of Beta`,
         picture: Gym,
       },
       {
-        title: "Navigate the gym",
+        title: t`Navigate the gym`,
         text: [
-          "Climbing shoes, a Chalk bag and the BETA App will be your new must haves for climbing in a gym.",
-          "With our new technology TAP-TO-SEND you can easily move through the gym, scan the routes that catch your eye and start climbing.",
-          "Beta lets your track each attempt, and save routes as you send them,.",
+          t`Climbing shoes, a Chalk bag and the BETA App will be your new must haves for climbing in a gym.`,
+          t`With our new technology TAP-TO-SEND you can easily move through the gym, scan the routes that catch your eye and start climbing.`,
+          t`Beta lets your track each attempt, and save routes as you send them,.`,
         ],
-        alt: "Screenshot of the route scanner page of Beta",
+        alt: t`Screenshot of the route scanner page of Beta`,
         picture: QRScanner,
       },
       {
-        title: "Track your progress",
+        title: t`Track your progress`,
         text: [
-          "We're transforming the climbing guidebook. You can now see the routes you have sent or attempted as well as track your progress over time.",
-          "We are also working in the background on features that will you tips on how to progress and climb harder",
+          t`We're transforming the climbing guidebook. You can now see the routes you have sent or attempted as well as track your progress over time.`,
+          t`We are also working in the background on features that will you tips on how to progress and climb harder`,
         ],
-        alt: "Screenshot of the athlete metrics page of Beta",
+        alt: t`Screenshot of the athlete metrics page of Beta`,
         picture: Profile,
       },
       {
-        title: "Be heard",
+        title: t`Be heard`,
         text: [
-          "BETA gives you a voice allowing you to let route-setters and gyms know what you think of each route, as well as the gym as a whole.",
+          t`BETA gives you a voice allowing you to let route-setters and gyms know what you think of each route, as well as the gym as a whole.`,
         ],
-        alt: "Screenshot of the route reviews page of Beta",
+        alt: t`Screenshot of the route reviews page of Beta`,
         picture: Route,
       },
     ],
   };
 
   const seo = {
-    title: "BETA Climbing app",
-    description:
-      "BETA lets you track and share your climbing session with QR-code route tags, progress analytics, challenged and project setting",
+    title: t`BETA Climbing app`,
+    description: t`BETA lets you track and share your climbing session with QR-code route tags, progress analytics, challenged and project setting`,
   };
 
   return (
@@ -65,8 +65,10 @@ const BetaPage = () => {
       <Layout>
         <section className="min-h-screen pt-36">
           <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
-            Powers <br />
-            climbers
+            <Trans>
+              Powers <br />
+              climbers
+            </Trans>
           </h1>
           <div className="relative">
             <Image className="bg-center bg-cover bg-climbers py-96" />

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Logo from "../images/logo_hrz_white.svg";
 import MenuButton from "../images/icons/menu_icon.svg";
+import { t } from "@lingui/macro";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,23 +13,23 @@ const Navbar = () => {
   const data = {
     menuItems: [
       {
-        text: "Home",
+        text: t`Home`,
         to: "/",
       },
       {
-        text: "Beta for climbers",
+        text: t`Beta for climbers`,
         to: "/beta",
       },
       {
-        text: "Gamma for gyms",
+        text: t`Gamma for gyms`,
         to: "/gamma",
       },
       {
-        text: "About us",
+        text: t`About us`,
         to: "/about-us",
       },
       {
-        text: "Contact us",
+        text: t`Contact us`,
         to: "/contact",
       },
     ],

@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
+import { t } from '@lingui/macro';
 
 const Seo = ({
-  lang = "en",
-  title = "Chalk Technologies",
-  description = "The new way to manage your climbing gyms",
+  lang = t`en`,
+  title = t`Chalk Technologies`,
+  description = t`The new way to manage your climbing gyms`,
 }: TProps) => {
   return (
     <>
@@ -21,7 +22,7 @@ const Seo = ({
 export default Seo;
 
 type TProps = {
-  lang?: "en" | "fr";
+  lang?: string;
   title?: string;
   description?: string;
 };

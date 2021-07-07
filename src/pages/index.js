@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { t } from "@lingui/macro";
 
-import MenuClimbersGyms from "../components/ MenuClimbersGyms";
+import MenuClimbersGyms from "../components/MenuClimbersGyms";
 import ClimbersGymsPictures from "../components/ClimbersGymsPictures";
 import Hero from "../components/hero";
 import Layout from "../components/Layout";
@@ -12,9 +13,8 @@ const IndexPage = () => {
   const [showModal, setShowModal] = useState(false);
 
   const seo = {
-    title: "BETA makes your sessions count",
-    description:
-      "BETA powers climbers and gyms through technologies that help you train smarter and send harder climbs, while tracking and sharing your progress with friends.",
+    title: t`BETA makes your sessions count`,
+    description: t`BETA powers climbers and gyms through technologies that help you train smarter and send harder climbs, while tracking and sharing your progress with friends.`,
   };
 
   return (
