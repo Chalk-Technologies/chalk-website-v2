@@ -1,19 +1,26 @@
 import React from "react";
 import tw from "twin.macro";
 import Logo from "../images/icons/logo_icon_light_gray.svg";
+import { Trans } from "@lingui/macro";
 
 const Banner = () => {
   return (
     <div className="flex items-center justify-center py-12">
-      <Word>Send</Word>
+      <Word>
+        <Trans>Send</Trans>
+      </Word>
       <div className="w-12">
         <img src={Logo} alt="Beta's logo" />
       </div>
-      <Word>Climb</Word>
+      <Word>
+        <Trans>Climb</Trans>
+      </Word>
       <div className="w-12">
         <img src={Logo} alt="Beta's logo" />
       </div>
-      <Word>Train</Word>
+      <Word>
+        <Trans>Train</Trans>
+      </Word>
     </div>
   );
 };

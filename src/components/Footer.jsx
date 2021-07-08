@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Trans } from "@lingui/macro";
 
 const data = {
   socialMedia: [
@@ -20,7 +21,9 @@ const Footer = () => {
     <footer className="flex flex-wrap px-6 py-3 bg-chalk-dark-gray md:flex-nowrap">
       <div className="flex-grow order-first w-full text-center md:w-1/3 md:text-left">
         <small className="text-white">
-          Copyright © 2021. Chalk technologies. all rights reserved
+          <Trans>
+            Copyright © 2021. Chalk technologies. all rights reserved
+          </Trans>
         </small>
       </div>
       <div className="flex justify-center flex-grow order-first w-full pb-3 text-white md:order-1 md:w-1/3 md:py-0">

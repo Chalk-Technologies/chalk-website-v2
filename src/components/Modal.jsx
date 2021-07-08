@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "gatsby";
+import { Trans, t } from "@lingui/macro";
 
 import { API_ENDPOINT } from "../utils/config";
 
@@ -61,15 +62,17 @@ const Modal = ({ setShowModal }) => {
           {status !== "initial" && (
             <div className="absolute top-0 left-0 z-40 flex flex-col items-center justify-center w-full h-full bg-chalk-dark-gray">
               <h1 className="text-2xl text-white font-heading">
-                {status === "loading" && "Loading"}
+                {status === "loading" && t`Loading`}
                 {status === "success" &&
-                  "✅ All good! You will be the first one to know about the release date."}
+                  t`✅ All good! You will be the first one to know about the release date.`}
                 {status === "error" && (
                   <>
                     <span role="img" aria-label="unhappy face">
                       😕
                     </span>
-                    "Something went wrong. Feel free to send us an email"}
+                    <Trans>
+                      Something went wrong. Feel free to send us an email
+                    </Trans>
                   </>
                 )}
               </h1>
@@ -78,7 +81,7 @@ const Modal = ({ setShowModal }) => {
                   className="px-8 py-4 my-4 text-white uppercase border-2 border-white font-heading hover:bg-white hover:text-chalk-dark-gray"
                   onClick={() => setShowModal(false)}
                 >
-                  Close
+                  <Trans>Close</Trans>
                 </button>
               )}
               {status === "error" && (
@@ -86,25 +89,27 @@ const Modal = ({ setShowModal }) => {
                   to="/contact"
                   className="px-8 py-4 my-4 text-white uppercase border-2 border-white font-heading"
                 >
-                  Send us an email
+                  <Trans>Send us an email</Trans>
                 </Link>
               )}
             </div>
           )}
           <h1 className="pb-4 text-2xl lg:text-5xl font-heading">
-            We're almost there!{" "}
+            <Trans>We're almost there! </Trans>
             <span role="img" aria-label="congratulations emoticon">
               🎉
             </span>
           </h1>
           <div className="flex-grow-0 h-1 mb-12 bg-chalk-orange" />
           <p className="pb-4 text-xl font-body lg:text-2xl">
-            The whole team is working very hard to bring you out the best
-            climbing experience.
+            <Trans>
+              The whole team is working very hard to bring you out the best
+              climbing experience.
+            </Trans>
           </p>
 
           <p className="pb-4 text-xl font-body lg:text-2xl">
-            Meanwhile, you can already use Beta from your browser
+            <Trans>Meanwhile, you can already use Beta from your browser</Trans>
             <a
               className="ml-1 font-bold cursor-pointer text-chalk-orange hover:underline"
               href="https://beta.chalk-technologies.com"
@@ -114,15 +119,18 @@ const Modal = ({ setShowModal }) => {
               <span role="img" aria-label="pointing right emoticon">
                 👉
               </span>{" "}
-              here
+              <Trans>here</Trans>
             </a>
           </p>
           <div className="py-4" />
           <p className="pb-4 text-xl font-body lg:text-2xl">
-            Want us to drop you a line when the mobile application is released ?
+            <Trans>
+              Want us to drop you a line when the mobile application is released
+              ?
+            </Trans>
           </p>
           <p className="pb-4 text-xl font-body lg:text-2xl">
-            Simply leave us your email!
+            <Trans>Simply leave us your email!</Trans>
           </p>
           <form
             onSubmit={handleSubmit(handleSubmitForm)}
@@ -155,13 +163,13 @@ const Modal = ({ setShowModal }) => {
                   className="flex-grow-0 px-8 py-4 mt-4 ml-2 text-xl border-2 border-white font-heading hover:border-chalk-orange hover:bg-chalk-orange hover:text-chalk-dark-gray lg:mt-0"
                   type="submit"
                 >
-                  Yes, please!
+                  <Trans>Yes, please!</Trans>
                 </button>
                 <button
                   className="block mt-4 lg:mt-0 hover:color-red-500 text-md lg:hidden"
                   onClick={() => setShowModal(false)}
                 >
-                  No, thank you.
+                  <Trans>No, thank you.</Trans>
                 </button>
               </div>
             </div>

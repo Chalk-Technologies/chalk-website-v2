@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 import { API_ENDPOINT } from "../utils/config";
+import { Trans, t } from "@lingui/macro";
 
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
@@ -12,7 +13,7 @@ const Contact = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    setStatus("loading");
+    setStatus(t`loading`);
 
     const { recipient, title, text } = data;
 
@@ -42,13 +43,12 @@ const Contact = () => {
   };
 
   const seo = {
-    title: "BETA support",
-    description:
-      "Contact the BETA team for any questions related to setting up an account, registering your gym or asking about juicy new features.",
+    title: t`BETA support`,
+    description: t`Contact the BETA team for any questions related to setting up an account, registering your gym or asking about juicy new features.`,
   };
   return (
     <>
-      <Seo title="Contact from - Get in touch" />
+      <Seo title={t`Contact from - Get in touch`} />
       <Layout>
         <section className="flex flex-col flex-grow pt-36">
           <section className="">
@@ -68,7 +68,7 @@ const Contact = () => {
             >
               {status === "initial" && (
                 <h1 className="flex items-center justify-center my-3 text-4xl text-white uppercase font-heading">
-                  Send us an email
+                  <Trans>Send us an email</Trans>
                 </h1>
               )}
               {status === "initial" && (
@@ -96,7 +96,7 @@ const Contact = () => {
                     className="px-4 py-2 my-3 font-heading text-chalk-dark-gray"
                   />
                   <button className="w-1/2 px-8 py-4 mx-auto my-4 mt-6 text-white uppercase transition border-2 border-white font-heading hover:text-chalk-dark-gray hover:bg-chalk-orange hover:border-chalk-orange">
-                    Send
+                    <Trans>Send</Trans>
                   </button>
                 </div>
               )}
@@ -106,14 +106,16 @@ const Contact = () => {
                     <span role="img" alt="check mark icon">
                       ✅{" "}
                     </span>
-                    All good! We'll get back to you as soon as we're finished
-                    climbing.
+                    <Trans>
+                      All good! We'll get back to you as soon as we're finished
+                      climbing.
+                    </Trans>
                   </h2>
                   <Link
                     className="px-8 py-4 mx-auto my-4 mt-12 text-white uppercase transition border-2 border-white font-heading hover:border-chalk-orange hover:bg-chalk-orange"
                     to="/"
                   >
-                    Back home
+                    <Trans>Back home</Trans>
                   </Link>
                 </div>
               )}
@@ -123,11 +125,13 @@ const Contact = () => {
                     <span role="img" aria-label="sad face emoji">
                       😕
                     </span>{" "}
-                    Something went wrong...
+                    <Trans>Something went wrong...</Trans>
                   </h2>
                   <h2 className="flex items-center justify-center mt-2 text-2xl text-white font-body font-heading">
-                    Alternatively you can send us a good ol' fashioned email by
-                    clicking{" "}
+                    <Trans>
+                      Alternatively you can send us a good ol' fashioned email
+                      by clicking
+                    </Trans>
                     <a
                       className="ml-2 font-bold text-chalk-orange"
                       href="mailto:info@chalk-technologies.com"
@@ -137,7 +141,7 @@ const Contact = () => {
                       <span role="img" aria-label="point right emoji">
                         👉
                       </span>{" "}
-                      here
+                      <Trans>here</Trans>
                     </a>
                     .
                   </h2>
@@ -145,7 +149,7 @@ const Contact = () => {
                     className="px-8 py-4 mx-auto my-4 mt-12 text-white uppercase transition border-2 border-white font-heading hover:border-chalk-orange hover:bg-chalk-orange"
                     to="/"
                   >
-                    Back home
+                    <Trans>Back home</Trans>
                   </Link>
                 </div>
               )}
