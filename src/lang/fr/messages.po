@@ -27,7 +27,7 @@ msgstr "Qui sommes nous"
 
 #: src/pages/contact.js:109
 msgid "All good! We'll get back to you as soon as we're finished climbing."
-msgstr "C'est tout bon bon! Nous revenons vers vous des que l'on est retour de notre grimpe!"
+msgstr "C'est tout bon bon! Nous revenons vers vous dès que l'on est retour de notre sortie grimpe!"
 
 #: src/pages/privacy.js:115
 msgid "All intellectual property rights are reserved."
@@ -43,11 +43,11 @@ msgstr "Photo de Aloys"
 
 #: src/pages/about-us.js:38
 msgid "Aloys Berger, First Employee and Front-End Developer"
-msgstr "Aloys Berger, Premier Employee et developpeur Front-End"
+msgstr "Aloys Berger, premier employé et développeur Front-End"
 
 #: src/pages/contact.js:131
 msgid "Alternatively you can send us a good ol' fashioned email by clicking"
-msgstr "Alternativement, vous pouvez nous envoyez un bon vieux courriel en cliquant ici"
+msgstr "Sinon, vous pouvez simplement nous envoyez un courriel en cliquant ici"
 
 #: src/pages/privacy.js:79
 msgid "Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same."
@@ -68,23 +68,23 @@ msgstr "BETA l'application des grimpeurs"
 
 #: src/pages/beta.js:49
 msgid "BETA gives you a voice allowing you to let route-setters and gyms know what you think of each route, as well as the gym as a whole."
-msgstr "BETA vous donne la parole en vous permettant de donner votre avis sur les voies aux ouvreurs et sur la salle en general."
+msgstr "BETA vous donne la parole en vous permettant de donner votre avis sur les voies aux ouvreurs et sur la salle en général."
 
 #: src/pages/beta.js:21
 msgid "BETA lets you search and explore the gyms near you, or in the city you are visiting when you're on the road."
-msgstr "BETA vous permet de rechercher et explorer les salles pres de vous, ou dans les villes que vous traversez lors de vos voyages."
+msgstr "BETA vous permet de rechercher et explorer les salles près de chez vous, ou dans les villes que vous traversez lors de vos voyages."
 
 #: src/pages/beta.js:59
 msgid "BETA lets you track and share your climbing session with QR-code route tags, progress analytics, challenged and project setting"
-msgstr "BETA vous permet d'enregister et partager vos sessions grimpes graces aux QR Code sur chaque voie et d'analyser votre progression."
+msgstr "BETA vous permet d'enregister et partager vos sessions grimpes grâce aux codes QR sur chaque voie et d'analyser votre progression."
 
 #: src/pages/index.js:16
 msgid "BETA makes your sessions count"
-msgstr "BETA pour que vos sessions comptent"
+msgstr "BETA pour une meilleure grimpe"
 
 #: src/pages/index.js:17
 msgid "BETA powers climbers and gyms through technologies that help you train smarter and send harder climbs, while tracking and sharing your progress with friends."
-msgstr "BETA supportent les grimpeurs et salles grace a des nouvelles technologies qui vous permettent de vous entrainer et de marquer des voies plus diffile, analyser votre progression and partager vos exploits avec vos amis."
+msgstr "BETA aident les grimpeurs et salles grâce aux nouvelles technologies qui vous permettent de vous entrainer et d'envoyer des voies toujours plus difficiles, d'analyser votre progression et partager vos exploits avec vos amis."
 
 #: src/pages/contact.js:46
 msgid "BETA support"
@@ -105,7 +105,7 @@ msgstr "Beta pour les grimpeurs"
 
 #: src/pages/beta.js:32
 msgid "Beta lets your track each attempt, and save routes as you send them,."
-msgstr "Beta vous permet grader une trace de chaque essai et d'enregistrer les voies que vous avez realise."
+msgstr "Beta vous permet garder une trace de chaque essai et d'enregistrer les voies que vous avez realisé."
 
 #: src/pages/privacy.js:92
 msgid "By accessing BETA, you agreed to use cookies in agreement with the Chalk Technologies Ltd.'s Privacy Policy."
@@ -139,7 +139,7 @@ msgstr "Grimpe"
 
 #: src/pages/beta.js:30
 msgid "Climbing shoes, a Chalk bag and the BETA App will be your new must haves for climbing in a gym."
-msgstr "Des chaussures de grimpe, un sac de magnesie et l'app BETA: c'est tout ce qu'il vous faut pour grimper."
+msgstr "Des chaussures de grimpe, un sac de magnésie et l'applicqtion BETA: c'est maintenant tout ce qu'il vous faut pour grimper."
 
 #: src/components/Modal.jsx:84
 msgid "Close"
@@ -161,7 +161,7 @@ msgstr "Contactez-nous!"
 
 #: src/pages/contact.js:47
 msgid "Contact the BETA team for any questions related to setting up an account, registering your gym or asking about juicy new features."
-msgstr "Contactez l'équipe BETA pour toutes questions liées à la création de compte, l'enregistrement de votre salle ou simplement pour savoir quelles sont les dernieres nouveautees."
+msgstr "Contactez l'équipe BETA pour toutes questions liées à la création de compte, l'enregistrement de votre salle ou simplement pour savoir quelles sont les dernières nouveautées."
 
 #: src/components/Navbar.jsx:32
 msgid "Contact us"
@@ -185,7 +185,7 @@ msgstr "Copyright © 2021. Chalk tecnologies. Tous droits reserves"
 
 #: src/pages/gamma.js:28
 msgid "Create an online event calendar accessible to all BETA users and gym members"
-msgstr "Creer un calendrier en ligne accessible à tous les utilisteurs BETA et les grimpeurs de la salle."
+msgstr "Créer un calendrier en ligne accessible à tous les utilisteurs BETA et les grimpeurs de la salle."
 
 #: src/pages/privacy.js:556
 msgid "Disclaimer To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website."
@@ -201,23 +201,23 @@ msgstr "Installer sur iOS"
 
 #: src/pages/gamma.js:19
 msgid "Easily and efficiently log the routes you have active, while giving your customers access to digital route pages."
-msgstr "Notez facilement et efficacement les voies active, tout en permettant a vos clients d'acceder aux informations des voies."
+msgstr "Suivez facilement et efficacement les voies active, tout en permettant à vos clients d'accéder aux informations des voies."
 
 #: src/pages/gamma.js:20
 msgid "Engage with climbers by collecting feedback on routes and democratizing the grading system"
-msgstr "Engager la conversation avec vos grimpeurs en collectant les remarques sur les voies et en democratisant la cotation de celles-ci."
+msgstr "Engager la conversation avec vos grimpeurs en collectant les remarques sur les voies et en démocratisant la cotation de celles-ci."
 
 #: src/pages/gamma.js:17
 msgid "Enhance the experience"
-msgstr "Ameliorer l'experience"
+msgstr "Améliorer l'expérience"
 
 #: src/pages/beta.js:22
 msgid "Explore the top rated routes in the gyms, find the routes that fit your style, save and share the routes you attempt."
-msgstr "Explorez les voies les mieux notes de la salle, trouvez les voies qui corresponde a votre style, enregistrer et partager les voies que vous avez tentees."
+msgstr "Explorez les voies les mieux notées de la salle, trouvez les voies qui correspondent à votre style, enregistrer et partager les voies que vous avez tentées."
 
 #: src/pages/beta.js:19
 msgid "Find & send new projects"
-msgstr "Decouvrer et grimper des nouvelles voies"
+msgstr "Découvrer et grimper des nouvelles voies"
 
 #: src/pages/gamma.js:53
 msgid "GAMMA Climbing Gym Software"
@@ -225,11 +225,11 @@ msgstr "GAMMA Logiciel de gestion de salle de grimpe"
 
 #: src/pages/gamma.js:54
 msgid "GAMMA powers climbing gyms by providing digital route setting, event and class management as well as business analytics, while transforming the experience for their customers."
-msgstr "GAMMA accompagne les salles de grimpe en apportant la gestion des voies, des evenement et des cours ainsi que des statistiques intelligente sur votre salle, tout en transformant l'experience de vos clients. "
+msgstr "GAMMA accompagne les salles de grimpe en apportant la gestion des voies, des évenements et des cours ainsi que des statistiques intelligentes sur votre salle, tout en transformant l'expérience de vos clients."
 
 #: src/components/Navbar.jsx:24
 msgid "Gamma for gyms"
-msgstr "Gamme pour les salles"
+msgstr "Gamma pour les salles"
 
 #: src/components/hero.jsx:64
 msgid "Get in touch"
@@ -241,19 +241,19 @@ msgstr "Retour à l'accueil"
 
 #: src/pages/about-us.js:30
 msgid "Having an obsession with using proper technique and video feedback to increase his performance in running, climbing, handstands and weightlifting, Phanos is eager to accelerate the learning process of every climber."
-msgstr "Ayant une obsession pour l'utilisation d'une technique propre et l'utilisation de la video pour ameliorer ses performances en course a pied, grimpe, gymnastique et halterophilie, Phanos cherche a accelerer le processus d'apprentissage de chaque grimpeur."
+msgstr "Ayant une obsession pour l'utilisation d'une technique exemplaire et l'utilisation de la vidéo pour améliorer ses performances en course à pied, grimpe, gymnastique et haltérophilie, Phanos cherche à accélerer le processus d'apprentissage de chaque grimpeur."
 
 #: src/pages/about-us.js:41
 msgid "He has a background in front-end development and a vast love for mountain and sea sports, and is excited to be the first employee of a great team forming the future of sports performance through technology."
-msgstr "Il a un passe en developpement front-end et un enorme interet pour les sports de montagne et d'eau; et il est enthousiaste a l'idee d'etre le premier employee d'une formidable equipe pret a faire avancer le sport a travers la technologie."
+msgstr "Avec un passé en développement front-end et un énorme interêt pour les sports de montagne et d'eau; et il est enthousiaste à l'idée d'être le premier employée d'une formidable équipe prêt à faire avancer le sport à travers la technologie."
 
 #: src/pages/about-us.js:31
 msgid "He has extensive experience in scaling startups, in cross-functional and product roles, and has worked for several years in a high-growth FinTech, seeing it through an acquisition."
-msgstr "Il a une forte experience dans l'accompagnement de start-up, que ce soit en gestion ou role technique, et a travaille plusieurs annees pour une start-up FinTech a tres forte croissance jusqu'a son acquisition par un grand groupe."
+msgstr "Il a une forte expérience dans l'accompagnement de start-ups, que ce soit en gestion ou technique, et a travaillé plusieurs années pour une start-up FinTech à très forte croissance jusqu'à son acquisition par un grand groupe."
 
 #: src/pages/about-us.js:32
 msgid "He holds an MSc in Engineering from the Swiss Federal Technical Institute in Zurich (ETHz) and an MBA from the Quantic School of Business and Technology."
-msgstr "Il a un MSc en Engineering obtenu a l'Institut Technique Federal de Suisse (ETHz) a Zurich et un MBA a la \"Quantic School of Business and Technology\"."
+msgstr "Il a un MSc en Engineering obtenu à l'Institut Technique Fédéral de Suisse (ETHz) à Zurich et un MBA à la \"Quantic School of Business and Technology\"."
 
 #: src/components/Navbar.jsx:16
 msgid "Home"
@@ -286,23 +286,23 @@ msgstr "Chargement"
 
 #: src/components/hero.jsx:56
 msgid "Make your sessions count"
-msgstr "Pour que vos sessions comptent"
+msgstr "De meilleures sessions"
 
 #: src/pages/gamma.js:26
 msgid "Manage classes & events"
-msgstr "Gerer les cours et evenements"
+msgstr "Gérer les cours et évènements"
 
 #: src/pages/gamma.js:29
 msgid "Manage customer loads and peak hours and gain access to business intelligence data."
-msgstr "Gerer les fortes affluences et heures de pointes et collecter des donnees sur l'utlisation de votre salle"
+msgstr "Gérer les fortes affluences et heures de pointes et collecter des données sur l'utilisation de votre salle"
 
 #: src/components/Modal.jsx:112
 msgid "Meanwhile, you can already use Beta from your browser"
-msgstr "Pendant ce temps, vous pouvez deja utiliser Beta depuis votre navigateur"
+msgstr "Pendant ce temps, vous pouvez déjà utiliser Beta depuis votre navigateur"
 
 #: src/pages/about-us.js:59
 msgid "Meet the team"
-msgstr "L'equipe"
+msgstr "L'équipe"
 
 #: src/pages/about-us.js:24
 msgid "Miura Hawkins' headshot"
@@ -340,7 +340,7 @@ msgstr ""
 
 #: src/pages/about-us.js:50
 msgid "Obsessed with progress"
-msgstr "Obsede par la progression"
+msgstr "Obsédé par la progression"
 
 #: src/pages/privacy.js:132
 #: src/pages/privacy.js:321
@@ -376,11 +376,11 @@ msgstr "Pour les salles"
 msgid "Powers <0/>climbers"
 msgstr "Pour les grimpeurs"
 
-#: src/components/ MenuClimbersGyms.jsx:15
+#: src/components/MenuClimbersGyms.jsx:15
 msgid "Powers<0/>climbers"
 msgstr "Pour les grimpeurs"
 
-#: src/components/ MenuClimbersGyms.jsx:28
+#: src/components/MenuClimbersGyms.jsx:28
 msgid "Powers<0/>gyms"
 msgstr "Pour les salles"
 
@@ -390,39 +390,39 @@ msgstr ""
 
 #: src/pages/about-us.js:19
 msgid "Rocking a harness and chalk bag since the age of 6, Miura has seen the indoor climbing gym industry undergo massive changes, growing from a culty fringe activity to an Olympic sport."
-msgstr "Toujours avec un baudrier et un sac de magnesie depuis l'age de 6 ans, Miura a vu l'industrie de la grimpe en salle subir de grands changements, evoluant d'une activite marginale a un sport Olympique."
+msgstr "Toujours avec un baudrier et un sac de magnésie depuis l'âge de 6 ans, Miura a vu l'industrie de la grimpe en salle traverser de grands changements, évoluant d'une activité marginale à un sport Olympique."
 
 #: src/pages/gamma.js:38
 msgid "Routesetters will have more honest feedback from users, managers will be able to see which opening hours might overstaffed, and the app makes class scheduling and memberships a breeze"
-msgstr "Les ouvreurs auront un avis plus honnete des utilisateurs, les managers seront capable de savoir si le personnel est en surnombres a certaines heures, et l'appication rend la gestion de cours et d'abonnements un jeu d'enfant."
+msgstr "Les ouvreurs auront un avis plus honnête des utilisateurs, les managers seront capable de savoir si le personnel est en surnombre sur certaines plages horaires, et l'application rend la gestion de cours et d'abonnements un jeu d'enfant."
 
 #: src/pages/gamma.js:22
 msgid "Screenshot of the QRScanner TAPTOSEND"
-msgstr "Capture d'ecran du scanner de QR code TAPTOSEND"
+msgstr "Capture d'écran du scanner de QR code TAPTOSEND"
 
 #: src/pages/beta.js:43
 msgid "Screenshot of the athlete metrics page of Beta"
-msgstr "Capture d'ecran de la page statistique d'un utilsateur de BETA"
+msgstr "Capture d'écran de la page statistique d'un utilsateur de BETA"
 
 #: src/pages/beta.js:24
 msgid "Screenshot of the gym page of Beta"
-msgstr "Capture d'ecran d'une page salle de grimpe sur BETA"
+msgstr "Capture d'écran d'une page salle de grimpe sur BETA"
 
 #: src/pages/gamma.js:31
 msgid "Screenshot of the profile metrics"
-msgstr "Capture d'ecran de la page statistique sur GAMMA"
+msgstr "Capture d'écran de la page statistique sur GAMMA"
 
 #: src/pages/gamma.js:40
 msgid "Screenshot of the reviews"
-msgstr "Capture d'ecran de feedback sur GAMMA"
+msgstr "Capture d'écran de feedback sur GAMMA"
 
 #: src/pages/beta.js:51
 msgid "Screenshot of the route reviews page of Beta"
-msgstr "Capture d'ecran de la page laissez un commentaire de BETA"
+msgstr "Capture d'écran de la page laissez un commentaire de BETA"
 
 #: src/pages/beta.js:34
 msgid "Screenshot of the route scanner page of Beta"
-msgstr "Capture d'ecran de la page Scanner de BETA"
+msgstr "Capture d'écran de la page Scanner de BETA"
 
 #: src/components/Banner.jsx:10
 #: src/pages/contact.js:99
@@ -436,15 +436,15 @@ msgstr "Envoyez nous un courriel"
 
 #: src/pages/about-us.js:21
 msgid "She completed an MSc in Neural Systems and Computation from the Swiss Federal Technical Institute in Zurich (ETHz) and went on to work as a software engineer and then as head of technology."
-msgstr "Elle a obtenu un MSc en 'Neural Systems and Computations\" à l'Institut Federal Technique Suisse à Zurich (ETHz) et a par la suite travaille en tant qu'ingenieur software puis chef du service technologie."
+msgstr "Elle a obtenu un MSc en 'Neural Systems and Computations\" à l'Institut Fédéral Technique Suisse à Zurich (ETHz) et a par la suite a travaillé en tant qu'ingénieur software puis chef du service technologie."
 
 #: src/pages/about-us.js:22
 msgid "She has worked in start-ups for the vast majority of her professional career and loves breaking the status quo."
-msgstr "Elle a travaille pour des start-ups pour la majorite de sa carriere profesionnelle and adore challenger le status quo."
+msgstr "Elle a travaillé pour des start-ups pour la majorité de sa carrière profesionnelle et adore challenger le status quo."
 
 #: src/pages/about-us.js:20
 msgid "She was a member of the USA Climbing National Team for almost a decade and coached youth teams across the United States and Europe."
-msgstr "Elle a fait partie de l'equipe national des Etats-Unis pendant pres de 10 ans et a ete l'entraineuse d'equipe jeune a travers tous les Etats Unis et l'Europe."
+msgstr "Elle a fait partie de l'équipe nationale des Etats-Unis pendant près de 10 ans et a été l'entraineuse d'équipe jeune à travers tous les Etats-Unis et l'Europe."
 
 #: src/components/Modal.jsx:133
 msgid "Simply leave us your email!"
@@ -452,7 +452,7 @@ msgstr "Laissez nous simplement votre courriel."
 
 #: src/components/Modal.jsx:73
 msgid "Something went wrong. Feel free to send us an email"
-msgstr "Quelque chose ne s'est pas passe comme prevu. N'hesitez pas a nous envoyer un courriel"
+msgstr "Quelque chose ne s'est pas passé comme prévu. N'hésitez pas a nous envoyer un courriel"
 
 #: src/pages/contact.js:128
 msgid "Something went wrong..."
@@ -460,7 +460,7 @@ msgstr "Une erreur est survenue"
 
 #: src/pages/404.js:35
 msgid "Sorry"
-msgstr "Desole"
+msgstr "Désolé"
 
 #: src/pages/privacy.js:25
 msgid "Terms and Conditions"
@@ -472,7 +472,7 @@ msgstr "Termes et Conditions"
 
 #: src/pages/about-us.js:51
 msgid "The BETA of a climb is the key to unlocking it. We're a passionate and committed team, unified by our mission to help climbers train smarter and send harder climbs."
-msgstr "Le BETA est la solution pour reussir la voie. Nous sommes une equipe passionne et engage, unifie par notre mission d'aider les grimpeurs a s'entrainer plus intelligement et reussir des voies toujours plus difficiles."
+msgstr "Le BETA est la clé pour réussir la voie. Nous sommes une équipe passionné et engagé, unifié par notre mission d'aider les grimpeurs à s'entrainer plus intelligement et réussir des voies toujours plus difficiles."
 
 #: src/pages/privacy.js:49
 msgid "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: \"Client\", \"You\" and \"Your\" refers to you, the person log on this website and compliant to the Company’s terms and conditions."
@@ -484,11 +484,11 @@ msgstr ""
 
 #: src/components/Seo.tsx:8
 msgid "The new way to manage your climbing gyms"
-msgstr "La nouvelle facon de gerer votre salle d'escalade"
+msgstr "La nouvelle façon de gérer votre salle d'escalade"
 
 #: src/components/Modal.jsx:105
 msgid "The whole team is working very hard to bring you out the best climbing experience."
-msgstr "L'equipe entiere travaille dur pour vous apporter la meilleure experience de grimpe."
+msgstr "L'équipe entière travaille dur pour vous apporter la meilleure expérience de grimpe."
 
 #: src/pages/privacy.js:245
 #: src/pages/privacy.js:438
@@ -536,7 +536,7 @@ msgstr ""
 
 #: src/pages/beta.js:41
 msgid "We are also working in the background on features that will you tips on how to progress and climb harder"
-msgstr "Nous travaillons aussi sur de nouvelles fonctionnalites qui vous permettront de progresser et mieux grimper."
+msgstr "Nous travaillons aussi sur de nouvelles fonctionnalités qui vous permettront de progresser et mieux grimper."
 
 #: src/pages/privacy.js:548
 msgid "We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date."
@@ -560,7 +560,7 @@ msgstr ""
 
 #: src/pages/gamma.js:37
 msgid "We use AI technology on the aggregated data from all users to help businesses understand their customers better."
-msgstr "Nous utilisons l'Intelligence Artificiel sur les donnees recoltees depuis les utilisateurs pour aider votre entreprise a mieux connaitre votre client."
+msgstr "Nous utilisons l'Intelligence Artificielle sur les données recoltées depuis les utilisateurs pour aider votre entreprise à mieux connaitre votre client."
 
 #: src/pages/privacy.js:234
 #: src/pages/privacy.js:427
@@ -573,23 +573,23 @@ msgstr ""
 
 #: src/pages/gamma.js:46
 msgid "We'll help you set up BETA in your gym for free. Contact us today."
-msgstr "Nous vous aidons a mettre en place BETA dans votre salle gratuitement. Contactez-nous des aujourd'hui"
+msgstr "Nous vous aidons à mettre en place BETA dans votre salle gratuitement. Contactez-nous dès aujourd'hui"
 
 #: src/components/Modal.jsx:98
 msgid "We're almost there!"
-msgstr "Nous sommes presque la!"
+msgstr "Nous sommes presque là!"
 
 #: src/pages/beta.js:40
 msgid "We're transforming the climbing guidebook. You can now see the routes you have sent or attempted as well as track your progress over time."
-msgstr "Nous transformons le carnet de grimpe. Vous pouvez maintenant voir les routes que vous avez reussi ou tenter, ainsi que suivre votre progres tout au long de votre carriere de grimpeur."
+msgstr "Nous transformons le carnet de grimpe. Vous pouvez maintenant voir les routes que vous avez réussi ou tenter, ainsi que suivre votre progrès tout au long de votre carrière de grimpeur."
 
 #: src/pages/about-us.js:40
 msgid "When not flipping on his paraglider in the French Alps, Aloys builds the front-end of Chalk Technologies' first app: Beta."
-msgstr "Lorsqu'il ne fait pas des pirouettes en parapente dans les Alpes francaises, Aloys construit le front-end de la premiere application de Chalk Technologies: Beta."
+msgstr "Lorsqu'il ne fait pas des pirouettes en parapente dans les Alpes francaises, Aloys construit le front-end de la première application de Chalk Technologies: Beta."
 
 #: src/pages/beta.js:31
 msgid "With our new technology TAP-TO-SEND you can easily move through the gym, scan the routes that catch your eye and start climbing."
-msgstr "Avec notre nouveau TAP-TO-SEND vous pouvez maintenant explorer facilement la salle d'escalade, scanner les routes qui vous plaise et commencer a grimper."
+msgstr "Avec notre nouvelle TAP-TO-SEND vous pouvez maintenant explorer facilement la salle d'escalade, scanner les routes qui vous plaise et commencer à grimper."
 
 #: src/components/Modal.jsx:166
 msgid "Yes, please!"
@@ -655,4 +655,4 @@ msgstr "nous n'avons pas pu trouver ce que vous cherchiez."
 
 #: src/components/Modal.jsx:67
 msgid "✅ All good! You will be the first one to know about the release date."
-msgstr "✅ C'est tout bon! Vous serez le premier a être prevenu de la date de sortie."
+msgstr "✅ C'est tout bon! Vous serez le premier a être prévenu de la date de sortie."
