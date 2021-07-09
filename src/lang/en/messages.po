@@ -376,11 +376,11 @@ msgstr ""
 msgid "Powers <0/>climbers"
 msgstr ""
 
-#: src/components/ MenuClimbersGyms.jsx:15
+#: src/components/MenuClimbersGyms.jsx:15
 msgid "Powers<0/>climbers"
 msgstr ""
 
-#: src/components/ MenuClimbersGyms.jsx:28
+#: src/components/MenuClimbersGyms.jsx:28
 msgid "Powers<0/>gyms"
 msgstr ""
 
