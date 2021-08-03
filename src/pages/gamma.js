@@ -58,7 +58,7 @@ const Gamma = () => {
       <Seo title={seo.title} description={seo.description} />
       <Layout>
         <section className="min-h-screen pt-36">
-          <h1 className="pb-12 pl-8 text-5xl text-white uppercase pt-36 font-heading">
+          <h1 className="pb-12 pl-8 text-5xl text-white uppercase font-heading">
             <Trans>
               Powers <br />
               Gyms

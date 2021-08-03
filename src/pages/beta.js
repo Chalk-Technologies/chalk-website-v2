@@ -55,7 +55,7 @@ const BetaPage = () => {
   };
 
   const seo = {
-    title: t`BETA Climbing app`,
+    title: t`BETA Climbing`,
     description: t`BETA lets you track and share your climbing session with QR-code route tags, progress analytics, challenged and project setting`,
   };
 
